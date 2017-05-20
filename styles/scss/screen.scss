@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/**** VARIABLES ****/
+
+$black : #000;
+$white: #fff;
+$ft-title : 'Playfair Display', 'Times', serif;
+$ft-content : 'Lato', 'Arial', sans-serif;
+
+/***** IMPORTS *****/
+
+@import 'partials/reset';
+@import 'partials/clearfix';
+@import 'partials/scent-details';
+
+
+/***** GLOBALS *****/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ft-title;
+}
+
+p,
+a,
+span {
+  font-family: $ft-content;
+}
+
+a {
+  text-decoration: none;
+}
