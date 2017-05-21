@@ -111,6 +111,9 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 4% 8% 0 0; }
+    @media screen and (max-width: 1000px) {
+      .banner .scent-picture {
+        width: 40%; } }
     .banner .scent-picture img {
       width: 100%; }
   .banner .scent-picture-left {
@@ -129,6 +132,9 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 4% 0 0 8%; }
+    @media screen and (max-width: 1000px) {
+      .banner .scent-picture-left {
+        width: 40%; } }
     .banner .scent-picture-left img {
       width: 100%; }
 
@@ -158,19 +164,32 @@ header {
   align-items: center; }
   .scent-description .scent-text {
     width: 50%;
-    padding: 4% 7% 0 7%; }
+    padding: 4% 7% 4% 7%; }
+    @media screen and (max-width: 1000px) {
+      .scent-description .scent-text {
+        width: 60%; } }
     .scent-description .scent-text h2 {
       text-transform: uppercase;
       font-size: 30px;
       margin-bottom: 4%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description .scent-text h2 {
+          font-size: 24px; } }
     .scent-description .scent-text p {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 6%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description .scent-text p {
+          font-size: 15px;
+          line-height: 22.5px; } }
     .scent-description .scent-text .scent-price {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description .scent-text .scent-price {
+          font-size: 14px; } }
     .scent-description .scent-text a {
       color: #000;
       font-size: 18px;
@@ -201,18 +220,31 @@ header {
   .scent-description-right .scent-text {
     width: 50%;
     padding: 4% 7% 0 7%; }
+    @media screen and (max-width: 1000px) {
+      .scent-description-right .scent-text {
+        width: 60%; } }
     .scent-description-right .scent-text h2 {
       text-transform: uppercase;
       font-size: 30px;
       margin-bottom: 4%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description-right .scent-text h2 {
+          font-size: 24px; } }
     .scent-description-right .scent-text p {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 6%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description-right .scent-text p {
+          font-size: 15px;
+          line-height: 22.5px; } }
     .scent-description-right .scent-text .scent-price {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
+      @media screen and (max-width: 1000px) {
+        .scent-description-right .scent-text .scent-price {
+          font-size: 14px; } }
     .scent-description-right .scent-text a {
       color: #000;
       font-size: 18px;
