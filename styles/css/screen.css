@@ -82,7 +82,7 @@ header {
       /* }*/ }
     header nav li {
       text-transform: uppercase;
-      margin-left: 10.75%;
+      margin-left: 12%;
       /*     @media screen and (max-width: 750px) {*/
       /*       margin-left: 0;*/
       /* }*/ }
@@ -92,7 +92,6 @@ header {
 .banner {
   background-size: cover;
   background-position: center;
-  position: relative;
   height: 100vh;
   width: 100%; }
   .banner .scent-picture {
@@ -110,12 +109,40 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 4% 8% 0 0; }
+    padding: 1.5% 8% 0 0; }
     @media screen and (max-width: 1000px) {
       .banner .scent-picture {
         width: 40%; } }
-    .banner .scent-picture img {
-      width: 100%; }
+    @media screen and (max-width: 700px) {
+      .banner .scent-picture {
+        position: static;
+        width: 100%;
+        padding: 0 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  @media screen and (max-width: 700px) {
+    .banner figure {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  .banner img {
+    width: 100%; }
+    @media screen and (max-width: 700px) {
+      .banner img {
+        width: 50%; } }
   .banner .scent-picture-left {
     position: fixed;
     top: 0;
@@ -131,12 +158,40 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 4% 0 0 8%; }
+    padding: 1.5% 0 0 8%; }
     @media screen and (max-width: 1000px) {
       .banner .scent-picture-left {
         width: 40%; } }
-    .banner .scent-picture-left img {
-      width: 100%; }
+    @media screen and (max-width: 700px) {
+      .banner .scent-picture-left {
+        position: static;
+        width: 100%;
+        padding: 0 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  @media screen and (max-width: 700px) {
+    .banner figure {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  .banner img {
+    width: 100%; }
+    @media screen and (max-width: 700px) {
+      .banner img {
+        width: 50%; } }
 
 .banner-sauvage {
   background-image: url("../../img-layout/banniere-sauvage-dior.png"); }
@@ -164,30 +219,32 @@ header {
   align-items: center; }
   .scent-description .scent-text {
     width: 50%;
-    padding: 4% 7% 4% 7%; }
-    @media screen and (max-width: 1000px) {
+    padding: 4% 7% 0 7%; }
+    @media screen and (max-width: 700px) {
       .scent-description .scent-text {
-        width: 60%; } }
+        width: 100%;
+        padding: 0 7%; } }
     .scent-description .scent-text h2 {
       text-transform: uppercase;
       font-size: 30px;
+      font-weight: 300;
       margin-bottom: 4%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description .scent-text h2 {
           font-size: 24px; } }
     .scent-description .scent-text p {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 27px;
       margin-bottom: 6%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description .scent-text p {
-          font-size: 15px;
-          line-height: 22.5px; } }
+          font-size: 12px;
+          line-height: 18px; } }
     .scent-description .scent-text .scent-price {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description .scent-text .scent-price {
           font-size: 14px; } }
     .scent-description .scent-text a {
@@ -217,32 +274,38 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 700px) {
+    .scent-description-right {
+      width: 100%;
+      padding: 7% 7%; } }
   .scent-description-right .scent-text {
     width: 50%;
     padding: 4% 7% 0 7%; }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 700px) {
       .scent-description-right .scent-text {
-        width: 60%; } }
+        width: 100%;
+        padding: 0 7%; } }
     .scent-description-right .scent-text h2 {
       text-transform: uppercase;
       font-size: 30px;
+      font-weight: 300;
       margin-bottom: 4%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description-right .scent-text h2 {
           font-size: 24px; } }
     .scent-description-right .scent-text p {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 27px;
       margin-bottom: 6%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description-right .scent-text p {
-          font-size: 15px;
-          line-height: 22.5px; } }
+          font-size: 12px;
+          line-height: 18px; } }
     .scent-description-right .scent-text .scent-price {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 700px) {
         .scent-description-right .scent-text .scent-price {
           font-size: 14px; } }
     .scent-description-right .scent-text a {

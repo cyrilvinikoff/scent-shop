@@ -27,7 +27,7 @@ header {
     /*   -ms-flex-align: center;*/
     /*   align-items: center;*/
     /* }*/
-      h1 {
+    h1 {
       font-family: $ft-content;
       text-transform: uppercase;
     }
@@ -62,13 +62,13 @@ header {
     }
     li {
       text-transform: uppercase;
-      margin-left: 10.75%;
-  /*     @media screen and (max-width: 750px) {*/
-  /*       margin-left: 0;*/
-  /* }*/
-}
-a {
-  color: #fff;
-}
-}
+      margin-left: 12%;
+      /*     @media screen and (max-width: 750px) {*/
+      /*       margin-left: 0;*/
+      /* }*/
+    }
+    a {
+      color: #fff;
+    }
+  }
 }
