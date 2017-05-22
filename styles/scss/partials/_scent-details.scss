@@ -3,6 +3,9 @@
   background-position: center;
   height: 100vh;
   width: 100%;
+  @media screen and (max-width: 760px) {
+    background-position: right;
+  }
   .scent-picture {
     position: fixed;
     top: 0;
@@ -19,42 +22,39 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 1.5% 8% 0 0;
-    @media screen and (max-width: 1000px) {
-      width: 40%;
-    }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 760px) {
       position: static;
       width: 100%;
       padding: 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
-    figure {
-      @media screen and (max-width: 700px) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
+  }
+  figure {
+    @media screen and (max-width: 760px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
-    img {
-      width: 100%;
-      @media screen and (max-width: 700px) {
-        width: 50%;
-      }
+  }
+  img {
+    width: 100%;
+    @media screen and (max-width: 760px) {
+      width: 50%;
+    }
   }
   .scent-picture-left {
     position: fixed;
@@ -72,44 +72,41 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 1.5% 0 0 8%;
-    @media screen and (max-width: 1000px) {
-      width: 40%;
-    }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 760px) {
       position: static;
       width: 100%;
       padding: 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-    }
-    figure {
-      @media screen and (max-width: 700px) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-    }
-    img {
-      width: 100%;
-      @media screen and (max-width: 700px) {
-        width: 50%;
-      }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
   }
+  figure {
+    @media screen and (max-width: 760px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+  img {
+    width: 100%;
+    @media screen and (max-width: 760px) {
+      width: 50%;
+    }
+  }
+}
 
 .banner-sauvage {
   background-image: url('../../img-layout/banniere-sauvage-dior.png');
@@ -142,17 +139,17 @@
   align-items: center;
   .scent-text {
     width: 50%;
-    padding: 4% 7% 0 7%;
-    @media screen and (max-width: 700px) {
+    padding: 0 7%;
+    @media screen and (max-width: 760px) {
       width: 100%;
-      padding: 0 7%;
+      padding: 4% 7%;
     }
     h2 {
       text-transform: uppercase;
       font-size: 30px;
       font-weight: 300;
       margin-bottom: 4%;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 760px) {
         font-size: 24px;
       }
     }
@@ -160,17 +157,17 @@
       font-size: 18px;
       line-height: 27px;
       margin-bottom: 6%;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 760px) {
         font-size: 12px;
         line-height: 18px;
       }
     }
     .scent-price {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 700;
       margin-bottom: 5%;
-      @media screen and (max-width: 700px) {
-        font-size: 14px;
+      @media screen and (max-width: 760px) {
+        font-size: 20px;
       }
     }
     a {
@@ -188,6 +185,11 @@
       border: 1px solid $black;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s;
+      @media screen and (max-width: 700px) {
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+      }
     }
   }
 }
@@ -204,23 +206,23 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
     width: 100%;
     padding: 7% 7%;
   }
   .scent-text {
     width: 50%;
-    padding: 4% 7% 0 7%;
-    @media screen and (max-width: 700px) {
+    padding: 0 7%;
+    @media screen and (max-width: 760px) {
       width: 100%;
-      padding: 0 7%;
+      padding: 4% 7%;
     }
     h2 {
       text-transform: uppercase;
       font-size: 30px;
       font-weight: 300;
       margin-bottom: 4%;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 760px) {
         font-size: 24px;
       }
     }
@@ -228,17 +230,17 @@
       font-size: 18px;
       line-height: 27px;
       margin-bottom: 6%;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 760px) {
         font-size: 12px;
         line-height: 18px;
       }
     }
     .scent-price {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 700;
       margin-bottom: 5%;
-      @media screen and (max-width: 700px) {
-        font-size: 14px;
+      @media screen and (max-width: 760px) {
+        font-size: 20px;
       }
     }
     a {
@@ -256,6 +258,11 @@
       border: 1px solid $black;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s;
+      @media screen and (max-width: 760px) {
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+      }
     }
   }
 }
