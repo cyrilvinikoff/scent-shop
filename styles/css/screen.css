@@ -142,7 +142,7 @@ header {
     width: 100%; }
     @media screen and (max-width: 760px) {
       .banner img {
-        width: 50%; } }
+        width: 40%; } }
   .banner .scent-picture-left {
     position: fixed;
     top: 0;
@@ -188,7 +188,7 @@ header {
     width: 100%; }
     @media screen and (max-width: 760px) {
       .banner img {
-        width: 50%; } }
+        width: 40%; } }
 
 .banner-sauvage {
   background-image: url("../../img-layout/banniere-sauvage-dior.png"); }
@@ -216,7 +216,8 @@ header {
   align-items: center; }
   .scent-description .scent-text {
     width: 50%;
-    padding: 0 7%; }
+    padding: 0 7%;
+    margin-top: 1.5%; }
     @media screen and (max-width: 760px) {
       .scent-description .scent-text {
         width: 100%;
@@ -282,7 +283,8 @@ header {
       padding: 7% 7%; } }
   .scent-description-right .scent-text {
     width: 50%;
-    padding: 0 7%; }
+    padding: 0 7%;
+    margin-top: 1.5%; }
     @media screen and (max-width: 760px) {
       .scent-description-right .scent-text {
         width: 100%;
