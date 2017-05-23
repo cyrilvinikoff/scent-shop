@@ -370,7 +370,11 @@ li {
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-bottom: 3%; }
+  @media screen and (max-width: 760px) {
+    .banner-index {
+      margin-bottom: 5%; } }
   .banner-index h2 {
     padding-right: 5%;
     font-size: 36px;
@@ -381,7 +385,8 @@ li {
         font-size: 25px; } }
     @media screen and (max-width: 760px) {
       .banner-index h2 {
-        font-size: 20px; } }
+        font-size: 18px;
+        padding-left: 35%; } }
 
 .scent-list {
   width: 70%;
@@ -403,6 +408,9 @@ li {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media screen and (max-width: 760px) {
+    .scent-list {
+      margin-bottom: 5%; } }
   .scent-list h3 {
     text-align: center;
     font-size: 36px;
@@ -411,8 +419,8 @@ li {
     margin-bottom: 12%; }
     @media screen and (max-width: 760px) {
       .scent-list h3 {
-        font-size: 25px;
-        margin-top: 10%; } }
+        font-size: 20px;
+        margin-top: 5%; } }
   .scent-list a {
     width: 25%;
     text-align: center;
@@ -438,12 +446,12 @@ li {
       font-size: 26px; }
       @media screen and (max-width: 760px) {
         .scent-list a div h4 {
-          font-size: 20px; } }
+          font-size: 18px; } }
     .scent-list a div span {
       font-size: 16px; }
       @media screen and (max-width: 760px) {
         .scent-list a div span {
-          font-size: 15px; } }
+          font-size: 14px; } }
     .scent-list a div figure {
       width: 70%;
       margin: 0 auto; }
@@ -462,9 +470,13 @@ li {
   padding-top: 10%; }
 
 .bleu {
-  padding-top: 80%; }
+  padding-top: 45%; }
 
 .invictus {
-  padding-top: 50%; }
+  padding-top: 18%; }
+
+#sauvage {
+  padding-top: 17%;
+  width: 75%; }
 
 /*# sourceMappingURL=screen.css.map */

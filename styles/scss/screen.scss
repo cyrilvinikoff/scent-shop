@@ -59,6 +59,10 @@ li {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  margin-bottom: 3%;
+  @media screen and (max-width: 760px) {
+    margin-bottom: 5%;
+  }
   h2 {
     padding-right: 5%;
     font-size: 36px;
@@ -68,7 +72,8 @@ li {
       font-size: 25px;
     }
     @media screen and (max-width: 760px) {
-      font-size: 20px;
+      font-size: 18px;
+      padding-left: 35%;
     }
   }
 }
@@ -93,6 +98,9 @@ li {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  @media screen and (max-width: 760px) {
+    margin-bottom: 5%;
+  }
   h3 {
     text-align: center;
     font-size: 36px;
@@ -100,8 +108,8 @@ li {
     width: 100%;
     margin-bottom: 12%;
     @media screen and (max-width: 760px) {
-      font-size: 25px;
-      margin-top: 10%;
+      font-size: 20px;
+      margin-top: 5%;
     }
   }
   a {
@@ -122,35 +130,35 @@ li {
     }
     div {
 
-    h4,
-    span {
-      text-transform: uppercase;
-      color: $white;
-      font-family: $ft-title;
-    }
-    h4 {
-      font-size: 26px;
-      @media screen and (max-width: 760px) {
-        font-size: 20px;
+      h4,
+      span {
+        text-transform: uppercase;
+        color: $white;
+        font-family: $ft-title;
       }
-    }
-    span {
-      font-size: 16px;
-      @media screen and (max-width: 760px) {
-        font-size: 15px;
+      h4 {
+        font-size: 26px;
+        @media screen and (max-width: 760px) {
+          font-size: 18px;
+        }
       }
-    }
-    figure{
-      width: 70%;
-      margin: 0 auto;
-      img {
-        width: 100%;
-        margin-top: 15%;
-        position: relative;
+      span {
+        font-size: 16px;
+        @media screen and (max-width: 760px) {
+          font-size: 14px;
+        }
+      }
+      figure{
+        width: 70%;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          margin-top: 15%;
+          position: relative;
+        }
       }
     }
   }
-}
 }
 
 .guerlain  {
@@ -163,8 +171,13 @@ li {
   padding-top: 10%;
 }
 .bleu {
-  padding-top: 80%;
+  padding-top: 45%;
 }
 .invictus {
-  padding-top: 50%;
+  padding-top: 18%;
+}
+
+#sauvage {
+  padding-top: 17%;
+  width: 75%;
 }
