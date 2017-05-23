@@ -89,6 +89,139 @@ header {
     header nav a {
       color: #fff; }
 
+footer {
+  background-color: black;
+  margin-top: 7%; }
+  footer .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding: 9% 0 5% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    @media screen and (max-width: 1250px) {
+      footer .footer-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    footer .footer-container div {
+      width: 33.333333%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media screen and (max-width: 1250px) {
+        footer .footer-container div {
+          width: 100%;
+          text-align: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+    footer .footer-container .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      footer .footer-container .contact span {
+        font-family: "Playfair Display", "Times", serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px; }
+        @media screen and (max-width: 1250px) {
+          footer .footer-container .contact span {
+            font-size: 12px; } }
+      footer .footer-container .contact span:first-child {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 3%; }
+        @media screen and (max-width: 1250px) {
+          footer .footer-container .contact span:first-child {
+            font-size: 17px; } }
+    footer .footer-container .account ul {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media screen and (max-width: 1250px) {
+        footer .footer-container .account ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 7% 0; } }
+      footer .footer-container .account ul li {
+        width: 33.3333333%;
+        text-align: center;
+        font-family: "Playfair Display", "Times", serif;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700; }
+        @media screen and (max-width: 1250px) {
+          footer .footer-container .account ul li {
+            width: 100%;
+            font-size: 15px; } }
+    footer .footer-container .newsletter {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      @media screen and (max-width: 1250px) {
+        footer .footer-container .newsletter {
+          width: 100%;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
+      footer .footer-container .newsletter div {
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        @media screen and (max-width: 1250px) {
+          footer .footer-container .newsletter div {
+            width: 100%;
+            text-align: center; } }
+        footer .footer-container .newsletter div span {
+          font-family: "Playfair Display", "Times", serif;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 8%; }
+          @media screen and (max-width: 1250px) {
+            footer .footer-container .newsletter div span {
+              margin-bottom: 4%;
+              font-size: 15px; } }
+        footer .footer-container .newsletter div input {
+          width: 100%;
+          background-color: #000;
+          border: 1px solid #fff;
+          color: #fff;
+          padding: 3.5% 2%; }
+          @media screen and (max-width: 1250px) {
+            footer .footer-container .newsletter div input {
+              padding: 2% 1%;
+              width: 80%;
+              margin: 0 auto; } }
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -389,7 +522,7 @@ li {
         padding-left: 35%; } }
 
 .scent-list {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 7%;
   display: -webkit-box;
@@ -403,7 +536,7 @@ li {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1250px) {
     .scent-list {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -428,7 +561,7 @@ li {
     background-image: linear-gradient(black, white);
     margin-bottom: 5%;
     padding: 5% 3% 0 3%; }
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1250px) {
       .scent-list a {
         width: 45%;
         margin: 0 2.5%;
@@ -478,5 +611,68 @@ li {
 #sauvage {
   padding-top: 17%;
   width: 75%; }
+
+.scent-pack {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 950px) {
+    .scent-pack {
+      width: 60%; } }
+  .scent-pack h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 8%; }
+    @media screen and (max-width: 950px) {
+      .scent-pack h3 {
+        margin-top: 5%;
+        margin-bottom: 12%; } }
+    @media screen and (max-width: 760px) {
+      .scent-pack h3 {
+        font-size: 20px; } }
+  .scent-pack a {
+    width: 40%;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: center; }
+    @media screen and (max-width: 950px) {
+      .scent-pack a {
+        width: 100%; } }
+    .scent-pack a img {
+      width: 100%;
+      margin-bottom: 7%; }
+      @media screen and (max-width: 950px) {
+        .scent-pack a img {
+          margin-bottom: 5%; } }
+    .scent-pack a span {
+      color: #000;
+      font-family: "Playfair Display", "Times", serif;
+      font-size: 27px;
+      font-weight: 300; }
+      @media screen and (max-width: 950px) {
+        .scent-pack a span {
+          margin-bottom: 30%; } }
+      @media screen and (max-width: 760px) {
+        .scent-pack a span {
+          font-size: 15px; } }
+
+@media screen and (max-width: 950px) {
+  .pack-two {
+    margin-top: 15%; } }
 
 /*# sourceMappingURL=screen.css.map */

@@ -12,6 +12,7 @@ $ft-content : 'Lato', 'Arial', sans-serif;
 @import 'partials/reset';
 @import 'partials/clearfix';
 @import 'partials/header';
+@import 'partials/footer';
 @import 'partials/scent-details';
 
 
@@ -79,7 +80,7 @@ li {
 }
 
 .scent-list {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 7%;
   display: -webkit-box;
@@ -93,7 +94,7 @@ li {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1250px) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -119,7 +120,7 @@ li {
     background-image:linear-gradient(black, white);
     margin-bottom: 5%;
     padding: 5% 3% 0 3%;
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1250px) {
       width: 45%;
       margin: 0 2.5%;
       margin-bottom: 7%;
@@ -176,8 +177,76 @@ li {
 .invictus {
   padding-top: 18%;
 }
-
 #sauvage {
   padding-top: 17%;
   width: 75%;
+}
+
+.scent-pack {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  @media screen and (max-width: 950px) {
+    width: 60%;
+  }
+  h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 8%;
+    @media screen and (max-width: 950px) {
+      margin-top: 5%;
+      margin-bottom: 12%;
+    }
+    @media screen and (max-width: 760px) {
+      font-size: 20px;
+    }
+  }
+  a {
+    width: 40%;
+    margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: center;
+    @media screen and (max-width: 950px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 7%;
+      @media screen and (max-width: 950px) {
+        margin-bottom: 5%;
+      }
+    }
+    span {
+      color: $black;
+      font-family: $ft-title;
+      font-size: 27px;
+      font-weight: 300;
+      @media screen and (max-width: 950px) {
+        margin-bottom: 30%;
+      }
+      @media screen and (max-width: 760px) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.pack-two {
+  @media screen and (max-width: 950px) {
+    margin-top: 15%;
+  }
 }
