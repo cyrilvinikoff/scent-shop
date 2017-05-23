@@ -100,13 +100,7 @@ footer {
     padding: 9% 0 5% 0;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
+    display: flex; }
     @media screen and (max-width: 1250px) {
       footer .footer-container {
         -webkit-box-orient: vertical;
@@ -114,10 +108,7 @@ footer {
         -ms-flex-direction: column;
         flex-direction: column; } }
     footer .footer-container div {
-      width: 33.333333%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
+      width: 50%; }
       @media screen and (max-width: 1250px) {
         footer .footer-container div {
           width: 100%;
@@ -139,6 +130,12 @@ footer {
         font-size: 15px;
         font-weight: 400;
         line-height: 22.5px; }
+        footer .footer-container .contact span a {
+          font-family: "Playfair Display", "Times", serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 22.5px;
+          color: #fff; }
         @media screen and (max-width: 1250px) {
           footer .footer-container .contact span {
             font-size: 12px; } }
@@ -149,32 +146,58 @@ footer {
         @media screen and (max-width: 1250px) {
           footer .footer-container .contact span:first-child {
             font-size: 17px; } }
-    footer .footer-container .account ul {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
+    footer .footer-container .account-container {
+      width: 70%; }
       @media screen and (max-width: 1250px) {
-        footer .footer-container .account ul {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          margin: 7% 0; } }
-      footer .footer-container .account ul li {
-        width: 33.3333333%;
-        text-align: center;
-        font-family: "Playfair Display", "Times", serif;
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 700; }
+        footer .footer-container .account-container {
+          margin: 0 auto;
+          margin-bottom: 5%; } }
+      footer .footer-container .account-container .account {
+        width: 80%;
+        margin: 0 auto; }
+        footer .footer-container .account-container .account ul {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          text-align: center; }
+          @media screen and (max-width: 1250px) {
+            footer .footer-container .account-container .account ul {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              margin: 7% 0; } }
+          footer .footer-container .account-container .account ul li {
+            width: 33.3333333%;
+            text-align: center;
+            font-family: "Playfair Display", "Times", serif;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 700; }
+            @media screen and (max-width: 1250px) {
+              footer .footer-container .account-container .account ul li {
+                width: 100%;
+                font-size: 15px; } }
+            footer .footer-container .account-container .account ul li a {
+              color: #fff;
+              font-family: "Playfair Display", "Times", serif;
+              font-size: 18px;
+              line-height: 27px;
+              font-weight: 700; }
+      footer .footer-container .account-container .line {
+        border: 1px solid #fff;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3.5%; }
         @media screen and (max-width: 1250px) {
-          footer .footer-container .account ul li {
-            width: 100%;
-            font-size: 15px; } }
+          footer .footer-container .account-container .line {
+            margin-top: 1%; } }
     footer .footer-container .newsletter {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -189,7 +212,7 @@ footer {
           -ms-flex-pack: center;
           justify-content: center; } }
       footer .footer-container .newsletter div {
-        width: 50%;
+        width: 70%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -219,7 +242,7 @@ footer {
           @media screen and (max-width: 1250px) {
             footer .footer-container .newsletter div input {
               padding: 2% 1%;
-              width: 80%;
+              width: 70%;
               margin: 0 auto; } }
 
 .banner {
@@ -554,6 +577,11 @@ li {
       .scent-list h3 {
         font-size: 20px;
         margin-top: 5%; } }
+  .scent-list a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s; }
   .scent-list a {
     width: 25%;
     text-align: center;
@@ -591,7 +619,8 @@ li {
       .scent-list a div figure img {
         width: 100%;
         margin-top: 15%;
-        position: relative; }
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; }
 
 .guerlain {
   padding-top: 20%; }

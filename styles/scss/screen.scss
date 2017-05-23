@@ -113,6 +113,12 @@ li {
       margin-top: 5%;
     }
   }
+  a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+  }
   a {
     width: 25%;
     text-align: center;
@@ -130,7 +136,6 @@ li {
       margin: 10% 0;
     }
     div {
-
       h4,
       span {
         text-transform: uppercase;
@@ -155,7 +160,8 @@ li {
         img {
           width: 100%;
           margin-top: 15%;
-          position: relative;
+          -webkit-transition: ease-in-out 0.2s;
+          transition: ease-in-out 0.2s;
         }
       }
     }
