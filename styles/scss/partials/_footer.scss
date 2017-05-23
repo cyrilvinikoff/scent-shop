@@ -1,11 +1,8 @@
 footer {
-  background-color: black;
-  background-size: cover;
-  margin-top: 7%;
   background-image: url('../../img-layout/banniere-footer.png');
-  @media screen and (max-width: 1250px) {
-    background-position: center;
-  }
+  background-size: cover;
+  background-position: center;
+  margin-top: 7%;
   .footer-container {
     width: 90%;
     margin: 0 auto;
