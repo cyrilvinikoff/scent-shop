@@ -352,4 +352,119 @@ a {
 li {
   list-style: none; }
 
+.index-container {
+  width: 85%;
+  margin: 0 auto; }
+
+.banner-index {
+  background-image: url("../../img-layout/banniere-index.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .banner-index h2 {
+    padding-right: 5%;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff; }
+    @media screen and (max-width: 1100px) {
+      .banner-index h2 {
+        font-size: 25px; } }
+    @media screen and (max-width: 760px) {
+      .banner-index h2 {
+        font-size: 20px; } }
+
+.scent-list {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  @media screen and (max-width: 1100px) {
+    .scent-list {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  .scent-list h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 12%; }
+    @media screen and (max-width: 760px) {
+      .scent-list h3 {
+        font-size: 25px;
+        margin-top: 10%; } }
+  .scent-list a {
+    width: 25%;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+    background-image: linear-gradient(black, white);
+    margin-bottom: 5%;
+    padding: 5% 3% 0 3%; }
+    @media screen and (max-width: 1100px) {
+      .scent-list a {
+        width: 45%;
+        margin: 0 2.5%;
+        margin-bottom: 7%; } }
+    @media screen and (max-width: 760px) {
+      .scent-list a {
+        width: 100%;
+        margin: 10% 0; } }
+    .scent-list a div h4,
+    .scent-list a div span {
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "Playfair Display", "Times", serif; }
+    .scent-list a div h4 {
+      font-size: 26px; }
+      @media screen and (max-width: 760px) {
+        .scent-list a div h4 {
+          font-size: 20px; } }
+    .scent-list a div span {
+      font-size: 16px; }
+      @media screen and (max-width: 760px) {
+        .scent-list a div span {
+          font-size: 15px; } }
+    .scent-list a div figure {
+      width: 70%;
+      margin: 0 auto; }
+      .scent-list a div figure img {
+        width: 100%;
+        margin-top: 15%;
+        position: relative; }
+
+.guerlain {
+  padding-top: 20%; }
+
+.joy {
+  padding-top: 60%; }
+
+.chanel {
+  padding-top: 10%; }
+
+.bleu {
+  padding-top: 80%; }
+
+.invictus {
+  padding-top: 50%; }
+
 /*# sourceMappingURL=screen.css.map */
