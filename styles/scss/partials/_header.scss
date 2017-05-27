@@ -63,14 +63,6 @@ header {
         display: none;
       }
     }
-    p {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-    }
     li {
       text-transform: uppercase;
       margin-left: 12%;
@@ -97,17 +89,20 @@ header {
     .close {
       display: none;
       position: absolute;
-      top: 3%;
-      right: 8%;
+      top: 1%;
+      right: 10.5%;
       height: 20px;
       width: auto;
+      cursor: pointer;
     }
   }
 }
+
 .burger {
   display: none;
   height: 30px;
   width: auto;
+  cursor: pointer;
   @media only screen and (max-width: 900px) {
     display: block;
   }
