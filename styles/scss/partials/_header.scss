@@ -66,6 +66,9 @@ header {
     li {
       text-transform: uppercase;
       margin-left: 12%;
+      span {
+        font-family: $ft-title;
+      }
     }
     a {
       color: #fff;

@@ -86,6 +86,8 @@ header {
     header nav li {
       text-transform: uppercase;
       margin-left: 12%; }
+      header nav li span {
+        font-family: "Playfair Display", "Times", serif; }
     header nav a {
       color: #fff;
       font-family: "Playfair Display", "Times", serif; }
@@ -289,6 +291,7 @@ footer {
               margin: 0 auto; } }
 
 .banner {
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -296,6 +299,14 @@ footer {
   @media screen and (max-width: 760px) {
     .banner {
       background-position: right; } }
+  .banner .arrow {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: scroll ease-in-out 2s infinite;
+    animation: scroll ease-in-out 2s infinite; }
   .banner .scent-picture {
     position: fixed;
     top: 0;
@@ -531,6 +542,118 @@ footer {
           color: #000;
           border: 1px solid #000; } }
 
+.products {
+  width: 80%;
+  margin: 0 auto; }
+  @media screen and (max-width: 600px) {
+    .products {
+      width: 70%; } }
+  .products h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (max-width: 1100px) {
+      .products h2 {
+        font-size: 33px;
+        margin-top: 13%; } }
+    @media screen and (max-width: 760px) {
+      .products h2 {
+        font-size: 23px;
+        margin-top: 25%; } }
+  .products section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-top: 7%; }
+    @media screen and (max-width: 600px) {
+      .products section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    .products section h3 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 7%;
+      font-size: 30px;
+      font-weight: 500; }
+      @media screen and (max-width: 760px) {
+        .products section h3 {
+          font-size: 20px;
+          margin-top: 5%; } }
+    .products section a {
+      background-color: black;
+      width: 22%;
+      padding: 5% 5% 0 5%;
+      margin-bottom: 7%;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+      background-image: linear-gradient(black, white);
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center; }
+      @media screen and (max-width: 1605px) {
+        .products section a {
+          width: 30%; } }
+      @media screen and (max-width: 900px) {
+        .products section a {
+          width: 45%; } }
+      @media screen and (max-width: 700px) {
+        .products section a {
+          width: 100%;
+          margin-bottom: 10%;
+          padding: 5% 25% 0 25%; } }
+      .products section a figure {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; }
+      .products section a img {
+        width: 100%; }
+      .products section a h4 {
+        font-size: 26px; }
+        @media screen and (max-width: 760px) {
+          .products section a h4 {
+            font-size: 18px; } }
+      .products section a span {
+        font-size: 16px;
+        font-family: "Playfair Display", "Times", serif; }
+        @media screen and (max-width: 760px) {
+          .products section a span {
+            font-size: 14px; } }
+
+.joy-pro {
+  padding-top: 95%; }
+
+.guerlain-pro {
+  padding-top: 55%; }
+
+.ysl {
+  padding-top: 45%; }
+
+.robe {
+  padding-top: 55%; }
+
+.vie {
+  padding-top: 50%;
+  padding-left: 5%; }
+
+/* .jadore {*/
+/*   padding: 20% 20%;*/
+/* }*/
 /***** GLOBALS *****/
 h1,
 h2,
@@ -556,6 +679,7 @@ li {
   margin: 0 auto; }
 
 .banner-index {
+  position: relative;
   background-image: url("../../img-layout/banniere-index.png");
   background-size: cover;
   background-position: center;
@@ -586,7 +710,33 @@ li {
       .banner-index h2 {
         font-size: 18px;
         padding-left: 35%; } }
+  .banner-index div {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: scroll ease-in-out 2s infinite;
+    animation: scroll ease-in-out 2s infinite; }
 
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+    bottom: 5%; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    bottom: 2%;
+    opacity: 1; } }
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    bottom: 7%; }
+  50% {
+    opacity: 1; }
+  100% {
+    bottom: 2%;
+    opacity: 0.5; } }
 .scent-list {
   width: 60%;
   margin: 0 auto;
@@ -620,50 +770,84 @@ li {
       .scent-list h3 {
         font-size: 20px;
         margin-top: 5%; } }
-  .scent-list a:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: ease-in-out 0.2s;
-    transition: ease-in-out 0.2s; }
-  .scent-list a {
+  .scent-list .picture {
+    position: relative;
     width: 25%;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image: linear-gradient(black, white);
     margin-bottom: 5%;
     padding: 5% 3% 0 3%; }
+    .scent-list .picture:hover img {
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
+    .scent-list .picture:hover h4 {
+      opacity: 0;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
+    .scent-list .picture:hover .details {
+      opacity: 1;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     @media screen and (max-width: 1250px) {
-      .scent-list a {
+      .scent-list .picture {
         width: 45%;
         margin: 0 2.5%;
         margin-bottom: 7%; } }
     @media screen and (max-width: 760px) {
-      .scent-list a {
+      .scent-list .picture {
         width: 100%;
         margin: 10% 0; } }
-    .scent-list a div h4,
-    .scent-list a div span {
+    .scent-list .picture div h4,
+    .scent-list .picture div span {
       text-transform: uppercase;
       color: #fff;
       font-family: "Playfair Display", "Times", serif; }
-    .scent-list a div h4 {
+    .scent-list .picture div h4 {
       font-size: 26px; }
       @media screen and (max-width: 760px) {
-        .scent-list a div h4 {
+        .scent-list .picture div h4 {
           font-size: 18px; } }
-    .scent-list a div span {
+    .scent-list .picture div span {
       font-size: 16px; }
       @media screen and (max-width: 760px) {
-        .scent-list a div span {
+        .scent-list .picture div span {
           font-size: 14px; } }
-    .scent-list a div figure {
+    .scent-list .picture div figure {
       width: 70%;
       margin: 0 auto; }
-      .scent-list a div figure img {
+      .scent-list .picture div figure img {
         width: 100%;
         margin-top: 15%;
         -webkit-transition: ease-in-out 0.2s;
         transition: ease-in-out 0.2s; }
+    .scent-list .picture .details {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+      background-image: linear-gradient(white, black);
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      opacity: 0;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
+      .scent-list .picture .details span {
+        width: 100%;
+        font-family: "Lato", "Arial", sans-serif;
+        font-size: 13px;
+        padding: 0 4%; }
 
 .guerlain {
   padding-top: 20%; }
@@ -712,7 +896,7 @@ li {
     @media screen and (max-width: 760px) {
       .scent-pack h3 {
         font-size: 20px; } }
-  .scent-pack a {
+  .scent-pack .pack {
     width: 40%;
     margin-bottom: 5%;
     display: -webkit-box;
@@ -721,30 +905,53 @@ li {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     @media screen and (max-width: 950px) {
-      .scent-pack a {
+      .scent-pack .pack {
         width: 100%; } }
-    .scent-pack a img {
+    .scent-pack .pack img {
       width: 100%;
       margin-bottom: 7%; }
       @media screen and (max-width: 950px) {
-        .scent-pack a img {
+        .scent-pack .pack img {
           margin-bottom: 5%; } }
-    .scent-pack a span {
+    .scent-pack .pack span {
       color: #000;
       font-family: "Playfair Display", "Times", serif;
       font-size: 27px;
       font-weight: 300; }
       @media screen and (max-width: 950px) {
-        .scent-pack a span {
+        .scent-pack .pack span {
           margin-bottom: 30%; } }
       @media screen and (max-width: 760px) {
-        .scent-pack a span {
+        .scent-pack .pack span {
           font-size: 15px; } }
 
 @media screen and (max-width: 950px) {
   .pack-two {
     margin-top: 15%; } }
+
+.discover {
+  text-align: center;
+  margin: 5% 0; }
+  .discover a {
+    color: #000;
+    font-family: "Playfair Display", "Times", serif;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 1.5% 3%;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s; }
+    .discover a:hover {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #000;
+      -webkit-transition: ease-in-out 0.5s;
+      transition: ease-in-out 0.5s; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,126 @@
+.products {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
+  h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    @media screen and (max-width: 1100px) {
+      font-size: 33px;
+      margin-top: 13%;
+    }
+    @media screen and (max-width: 760px) {
+      font-size: 23px;
+      margin-top: 25%;
+    }
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-top: 7%;
+    @media screen and (max-width: 600px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    h3 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 7%;
+      font-size: 30px;
+      font-weight: 500;
+      @media screen and (max-width: 760px) {
+        font-size: 20px;
+        margin-top: 5%;
+      }
+    }
+    a {
+      background-color: black;
+      width: 22%;
+      padding: 5% 5% 0 5%;
+      margin-bottom: 7%;
+      background-image:-webkit-gradient(linear, left top, left bottom, from(black), to(white));
+      background-image:linear-gradient(black, white);
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      @media screen and (max-width: 1605px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 900px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 5% 25% 0 25%;
+      }
+      figure {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+      }
+      img {
+        width: 100%;
+      }
+      h4 {
+        font-size: 26px;
+        @media screen and (max-width: 760px) {
+          font-size: 18px;
+        }
+      }
+      span {
+        font-size: 16px;
+        font-family: $ft-title;
+        @media screen and (max-width: 760px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.joy-pro {
+  padding-top: 95%;
+}
+
+.guerlain-pro {
+  padding-top: 55%;
+}
+
+.ysl {
+  padding-top: 45%;
+}
+
+.robe {
+  padding-top: 55%;
+}
+
+.vie {
+  padding-top: 50%;
+  padding-left: 5%;
+}
+
+/* .jadore {*/
+/*   padding: 20% 20%;*/
+/* }*/

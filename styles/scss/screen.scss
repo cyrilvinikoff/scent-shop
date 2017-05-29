@@ -14,6 +14,7 @@ $ft-content : 'Lato', 'Arial', sans-serif;
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/scent-details';
+@import 'partials/products-list';
 
 
 /***** GLOBALS *****/
@@ -46,6 +47,7 @@ li {
 }
 
 .banner-index {
+  position: relative;
   background-image: url('../../img-layout/banniere-index.png');
   background-size: cover;
   background-position: center;
@@ -76,6 +78,43 @@ li {
       font-size: 18px;
       padding-left: 35%;
     }
+  }
+  div {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: scroll ease-in-out 2s infinite;
+    animation: scroll ease-in-out 2s infinite;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+    bottom: 5%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 2%;
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    bottom: 7%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 2%;
+    opacity: 0.5;
   }
 }
 
@@ -113,19 +152,28 @@ li {
       margin-top: 5%;
     }
   }
-  a:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: ease-in-out 0.2s;
-    transition: ease-in-out 0.2s;
-  }
-  a {
+  .picture {
+    position: relative;
     width: 25%;
     text-align: center;
     background-image:-webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image:linear-gradient(black, white);
     margin-bottom: 5%;
     padding: 5% 3% 0 3%;
+    &:hover img {
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
+    }
+    &:hover h4 {
+      opacity: 0;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
+    }
+    &:hover .details {
+      opacity: 1;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
+    }
     @media screen and (max-width: 1250px) {
       width: 45%;
       margin: 0 2.5%;
@@ -163,6 +211,35 @@ li {
           -webkit-transition: ease-in-out 0.2s;
           transition: ease-in-out 0.2s;
         }
+      }
+    }
+    .details {
+      background-image:-webkit-gradient(linear, left top, left bottom, from(white), to(black));
+      background-image:linear-gradient(white, black);
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      opacity: 0;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
+      span {
+        width: 100%;
+        font-family: $ft-content;
+        font-size: 13px;
+        padding: 0 4%;
       }
     }
   }
@@ -217,7 +294,7 @@ li {
       font-size: 20px;
     }
   }
-  a {
+  .pack {
     width: 40%;
     margin-bottom: 5%;
     display: -webkit-box;
@@ -227,6 +304,11 @@ li {
     -ms-flex-align: end;
     align-items: flex-end;
     text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     @media screen and (max-width: 950px) {
       width: 100%;
     }
@@ -254,5 +336,27 @@ li {
 .pack-two {
   @media screen and (max-width: 950px) {
     margin-top: 15%;
+  }
+}
+
+.discover {
+  text-align: center;
+  margin: 5% 0;
+
+  a {
+    color: $black;
+    font-family: $ft-title;
+    font-size: 15px;
+    border: 1px solid $black;
+    padding: 1.5% 3%;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    &:hover {
+      background-color: $black;
+      color: $white;
+      border: 1px solid $black;
+      -webkit-transition: ease-in-out 0.5s;
+      transition: ease-in-out 0.5s;
+    }
   }
 }
