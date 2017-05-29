@@ -18,7 +18,7 @@
       <ul>
         <li><a href="products-list.html">nos parfums</a></li>
         <li><a href="#">mon compte</a></li>
-        <li><a href="#">mon panier <span>(0)</span></a></li>
+        <li><a href="#">mon panier (<span>0</span>)</a></li>
       </ul>
       <img class="burger" src="img-layout/menu.png" alt="">
     </nav>
@@ -167,37 +167,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript">
-  var burger = document.querySelector('.burger');
-  var close = document.querySelector('.close');
-  var nav = document.querySelector('nav');
-  var ul =  document.querySelector('nav ul');
-
-  burger.addEventListener('click', function(e) {
-    e.preventDefault();
-    burger.style.display = 'none';
-    close.style.display = 'block';
-    ul.style.display = 'flex';
-    nav.className = 'nav-extend';
-  });
-
-  close.addEventListener('click', function(e) {
-    e.preventDefault();
-    burger.style.display = 'block';
-    close.style.display = 'none';
-    ul.style.display = 'none';
-    nav.classList.remove('nav-extend');
-  });
-
-  // window.addEventListener('resize', function() {
-  //   if (window.innerWidth > 900) {
-  //     close.style.display = 'none';
-  //     burger.style.display = 'none';
-  //     ul.style.display = 'flex';
-  //     nav.classList.remove('nav-extend');
-  //   }
-  // });
-  </script>
+  <script src="script/js/burger.js" charset="utf-8"></script>
   <script src="script/js/add-to-cart.js" charset="utf-8"></script>
 </body>
 </html>
