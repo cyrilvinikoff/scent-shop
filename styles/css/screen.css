@@ -630,12 +630,17 @@ footer {
           margin-bottom: 10%;
           padding: 5% 25% 0 25%; } }
       .products section a figure {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end; }
+        /* display: -webkit-box;*/
+        /* display: -ms-flexbox;*/
+        /* display: flex;*/
+        /* -webkit-box-align: end;*/
+        /* -ms-flex-align: end;*/
+        /* align-items: flex-end;*/
+        /* -webkit-box-pack: end;*/
+        /* -ms-flex-pack: end;*/
+        /* justify-content: flex-end;*/
+        /* -ms-flex-line-pack: end;*/
+        /* align-content: flex-end;*/ }
       .products section a img {
         width: 100%; }
       .products section a h4 {
@@ -657,14 +662,23 @@ footer {
   padding-top: 55%; }
 
 .ysl {
-  padding-top: 45%; }
-
-.robe {
-  padding-top: 55%; }
+  padding-top: 90%;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 .vie {
-  padding-top: 50%;
+  padding-top: 45%;
   padding-left: 5%; }
+
+.jadore {
+  padding-top: 50%;
+  padding-left: 30%;
+  padding-right: 30%; }
+
+.robe {
+  padding-top: 45%;
+  padding-left: 20%;
+  padding-right: 20%; }
 
 /* .jadore {*/
 /*   padding: 20% 20%;*/
