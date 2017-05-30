@@ -74,6 +74,27 @@ header {
       color: #fff;
       font-family: $ft-title;
     }
+    span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 45%;
+      left: 105%;
+      width: 23px;
+      height: 23px;
+      padding: 1% 8%;
+      border-radius: 100%;
+      background-color: $white;
+      color: $black;
+      /* opacity: 0;*/
+    }
     li a:after {
       content: "";
       display: block;
@@ -88,6 +109,9 @@ header {
       width: 100%;
       margin-top: 4%;
       border-top: 2px solid #fff;
+    }
+    li:last-child {
+      position: relative;
     }
     .close {
       display: none;
@@ -121,4 +145,37 @@ header {
   width: 100%;
   height: 100vh;
   padding: 0 5%;
+}
+
+.appear {
+  -webkit-animation: appearance ease-in-out 1s;
+  animation: appearance ease-in-out 1s;
+}
+
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0;
+    margin-bottom: 80%;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    margin-bottom: 80%;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
+  }
 }

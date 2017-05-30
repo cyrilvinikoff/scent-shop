@@ -14,4 +14,5 @@ shop.addEventListener('click', function() {
 
   localStorage.setItem('count', nbItems);
   number.textContent = nbItems;
+  // number.style.opacity = 1;
 });
