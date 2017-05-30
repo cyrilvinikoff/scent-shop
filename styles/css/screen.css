@@ -798,6 +798,62 @@ footer {
 /* .classique {*/
 /*   padding: 42% 25% 0 25%;*/
 /* }*/
+.account {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  @media only screen and (max-width: 940px) {
+    .account {
+      width: 75%;
+      padding-top: 15vh;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .account div {
+    width: 45%;
+    text-align: center;
+    color: #000; }
+    @media only screen and (max-width: 940px) {
+      .account div {
+        width: 100%;
+        margin-bottom: 10%; } }
+    .account div h2 {
+      text-transform: uppercase;
+      margin-bottom: 10%; }
+    .account div form {
+      margin: 0 auto;
+      width: 80%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .account div form label {
+        font-family: "Lato", "Arial", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 5%; }
+      .account div form input {
+        padding: 4% 5%;
+        border: 1px solid #000;
+        margin-bottom: 8%; }
+        .account div form input[value] {
+          text-transform: uppercase;
+          color: #fff; }
+          .account div form input[value]:last-child {
+            background-color: #000; }
+
 /***** GLOBALS *****/
 h1,
 h2,

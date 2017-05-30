@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css/screen.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <title>Titre du site | Création ou connexion à votre compte</title>
+</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <h1>logo</h1>
+        </a>
+        <img class="close" src="img-layout/close.png" alt="">
+        <ul>
+          <li><a href="products-list.html">nos parfums</a></li>
+          <li><a href="account.html">mon compte</a></li>
+          <li><a href="#">mon panier <span id="count">0</span></a></li>
+        </ul>
+          <img class="burger" src="img-layout/menu.png" alt="">
+        </nav>
+      </header>
+      <main class="account">
+        <div>
+          <form class="" action="#" method="post">
+            <h2>mon compte</h2>
+            <label for="identifiant">identifiant</label>
+            <input type="text" name="identifiant" placeholder="xxx@xxx.xx">
+            <label for="mdp">mot de passe</label>
+            <input type="password" name="mdp" placeholder="mot de passe">
+            <input type="submit" name="ok" value="me connecter">
+          </form>
+        </div>
+
+        <div>
+          <form class="" action="#" method="post">
+            <h2>créer un compte</h2>
+            <label for="mail">adresse mail</label>
+            <input type="text" name="mdp-crea" placeholder="xxx@xxx.xx">
+            <label for="mdp">mot de passe</label>
+            <input type="password" name="mdp" placeholder="mot de passe">
+            <label for="mdp">mot de passe</label>
+            <input type="password" name="mdp" placeholder="mot de passe">
+            <input type="submit" name="ok" value="créer mon compte">
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="contact">
+            <span>Nous contacter</span>
+            <span><a href="mailto:nosparfums@gmail.com">nosparfums@gmail.com</a></span>
+            <span><a href="tel:0617389487">06 17 38 94 87</a></span>
+          </div>
+          <div class="account-container">
+            <div class="account">
+              <ul>
+                <li><a href="products-list.html">Nos parfums</a></li>
+                <li><a href="account.html">Mon compte</a></li>
+                <li><a href="#">Mon panier</a></li>
+              </ul>
+            </div>
+            <div class="line">
+            </div>
+          </div>
+          <div class="newsletter">
+            <div>
+              <span>S'inscrire à notre newsletter</span>
+              <form class="" action="index.html" method="post">
+                <input type="email" name="mail" placeholder="Adresse e-mail">
+                <input type="submit" name="" value="OK"></input>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script/js/burger.js" charset="utf-8"></script>
+      <!-- <script src="script/js/add-to-cart.js" charset="utf-8"></script> -->
+      <script src="script/js/save-storage.js" charset="utf-8"></script>
+    </body>
+    </html>
