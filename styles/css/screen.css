@@ -821,6 +821,12 @@ footer {
       flex-direction: column; } }
   .account div {
     width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
     color: #000; }
     @media only screen and (max-width: 940px) {
@@ -831,7 +837,6 @@ footer {
       text-transform: uppercase;
       margin-bottom: 10%; }
     .account div form {
-      margin: 0 auto;
       width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -844,6 +849,12 @@ footer {
         font-family: "Lato", "Arial", sans-serif;
         text-transform: uppercase;
         margin-bottom: 5%; }
+      .account div form span {
+        margin-bottom: 8%; }
+        .account div form span a {
+          color: #000; }
+      .account div form .mdp {
+        margin-bottom: 2%; }
       .account div form input {
         padding: 4% 5%;
         border: 1px solid #000;
@@ -852,7 +863,15 @@ footer {
           text-transform: uppercase;
           color: #fff; }
           .account div form input[value]:last-child {
-            background-color: #000; }
+            background-color: #000;
+            cursor: pointer;
+            -webkit-transition: ease-in-out 0.5s;
+            transition: ease-in-out 0.5s; }
+            .account div form input[value]:last-child:hover {
+              background-color: #fff;
+              color: #000;
+              -webkit-transition: ease-in-out 0.5s;
+              transition: ease-in-out 0.5s; }
 
 /***** GLOBALS *****/
 h1,

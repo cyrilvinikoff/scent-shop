@@ -28,9 +28,10 @@
           <form class="" action="#" method="post">
             <h2>mon compte</h2>
             <label for="identifiant">identifiant</label>
-            <input type="text" name="identifiant" placeholder="xxx@xxx.xx">
+            <input type="text" id="identifiant" name="identifiant" placeholder="xxx@xxx.xx">
             <label for="mdp">mot de passe</label>
-            <input type="password" name="mdp" placeholder="mot de passe">
+            <input class="mdp" id="mdp" type="password" name="mdp" placeholder="mot de passe">
+            <span><a href="#">[ mot de passe oublié ? ]</a></span>
             <input type="submit" name="ok" value="me connecter">
           </form>
         </div>
@@ -39,11 +40,11 @@
           <form class="" action="#" method="post">
             <h2>créer un compte</h2>
             <label for="mail">adresse mail</label>
-            <input type="text" name="mdp-crea" placeholder="xxx@xxx.xx">
-            <label for="mdp">mot de passe</label>
-            <input type="password" name="mdp" placeholder="mot de passe">
-            <label for="mdp">mot de passe</label>
-            <input type="password" name="mdp" placeholder="mot de passe">
+            <input type="text" id="mail" name="mdp-crea" placeholder="xxx@xxx.xx">
+            <label for="mdp-create">mot de passe</label>
+            <input type="password" id="mdp-create" name="mdp-create" placeholder="mot de passe">
+            <label for="mdp-conf">mot de passe</label>
+            <input type="password" id="mdp-conf" name="mdp-conf" placeholder="mot de passe">
             <input type="submit" name="ok" value="créer mon compte">
           </form>
         </div>
@@ -71,7 +72,7 @@
               <span>S'inscrire à notre newsletter</span>
               <form class="" action="index.html" method="post">
                 <input type="email" name="mail" placeholder="Adresse e-mail">
-                <input type="submit" name="" value="OK"></input>
+                <input type="submit" name="subscribe" value="OK">
               </form>
             </div>
           </div>
