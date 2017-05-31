@@ -15,7 +15,11 @@ close.addEventListener('click', function(e) {
   close.style.display = 'none';
   ul.classList.remove('appear');
   nav.className = 'reset-nav';
+  if (window.innerWidth > 900) {
+    burger.style.display = 'none';
+  }
 });
+
 
 window.addEventListener('resize', function() {
   if (window.innerWidth > 900) {
