@@ -45,22 +45,6 @@ header {
       -ms-flex-pack: end;
       justify-content: flex-end;
       @media only screen and (max-width: 900px) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 50vh;
-        width: 100%;
         display: none;
       }
     }
@@ -117,6 +101,9 @@ header {
       flex-direction: column;
       display: none;
       opacity: 0;
+      @media only screen and (max-width: 1050px) {
+        visibility: hidden;
+      }
       .basket-product {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -243,9 +230,38 @@ header {
   padding: 0 5%;
 }
 
+.reset-nav {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .appear {
   -webkit-animation: appearance ease-in-out 1s;
   animation: appearance ease-in-out 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
 }
 
 @-webkit-keyframes appearance {
@@ -275,3 +291,19 @@ header {
     margin-bottom: 0;
   }
 }
+
+/* .wokey {*/
+/*   -webkit-box-orient: vertical;*/
+/*   -webkit-box-direction: normal;*/
+/*   -ms-flex-direction: column;*/
+/*   flex-direction: column;*/
+/*   text-align: center;*/
+/*   -webkit-box-pack: justify;*/
+/*   -ms-flex-pack: justify;*/
+/*   justify-content: space-between;*/
+/*   -webkit-box-align: center;*/
+/*   -ms-flex-align: center;*/
+/*   align-items: center;*/
+/*   height: 50vh;*/
+/*   width: 100%;*/
+/* }*/

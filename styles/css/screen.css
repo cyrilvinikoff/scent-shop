@@ -67,22 +67,6 @@ header {
       justify-content: flex-end; }
       @media only screen and (max-width: 900px) {
         header nav ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          text-align: center;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          height: 50vh;
-          width: 100%;
           display: none; } }
     header nav li {
       text-transform: uppercase;
@@ -132,6 +116,9 @@ header {
       flex-direction: column;
       display: none;
       opacity: 0; }
+      @media only screen and (max-width: 1050px) {
+        header nav .basket-details {
+          visibility: hidden; } }
       header nav .basket-details .basket-product {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -240,9 +227,37 @@ header {
   height: 100vh;
   padding: 0 5%; }
 
+.reset-nav {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .appear {
   -webkit-animation: appearance ease-in-out 1s;
-  animation: appearance ease-in-out 1s; }
+  animation: appearance ease-in-out 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%; }
 
 @-webkit-keyframes appearance {
   0% {
@@ -262,6 +277,21 @@ header {
   100% {
     opacity: 1;
     margin-bottom: 0; } }
+/* .wokey {*/
+/*   -webkit-box-orient: vertical;*/
+/*   -webkit-box-direction: normal;*/
+/*   -ms-flex-direction: column;*/
+/*   flex-direction: column;*/
+/*   text-align: center;*/
+/*   -webkit-box-pack: justify;*/
+/*   -ms-flex-pack: justify;*/
+/*   justify-content: space-between;*/
+/*   -webkit-box-align: center;*/
+/*   -ms-flex-align: center;*/
+/*   align-items: center;*/
+/*   height: 50vh;*/
+/*   width: 100%;*/
+/* }*/
 footer {
   background-image: url("../../img-layout/banniere-footer.png");
   background-size: cover;
@@ -686,6 +716,19 @@ footer {
           color: #000;
           border: 1px solid #000; } }
 
+form {
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  form label {
+    text-transform: capitalize;
+    font-size: 15px; }
+
+.contain {
+  font-size: 14px; }
+
+.quantity {
+  padding: 1% 1%; }
+
 .products {
   width: 80%;
   margin: 0 auto; }
@@ -1057,7 +1100,7 @@ li {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1400px) {
     .scent-list {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1082,25 +1125,23 @@ li {
     background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image: linear-gradient(black, white);
     margin-bottom: 5%;
-    padding: 5% 3% 0 3%;
-    /* &:hover h4 {*/
-    /*   opacity: 0;*/
-    /*   -webkit-transition: ease-in-out 0.5s;*/
-    /*   transition: ease-in-out 0.5s;*/
-    /* }*/
-    /* &:hover .brand {*/
-    /*   opacity: 0;*/
-    /*   -webkit-transition: ease-in-out 0.5s;*/
-    /*   transition: ease-in-out 0.5s;*/
-    /* }*/ }
+    padding: 5% 3% 0 3%; }
     .scent-list .picture:hover img {
+      -webkit-transition: ease-in-out 0.5s;
+      transition: ease-in-out 0.5s; }
+    .scent-list .picture:hover h4 {
+      opacity: 0;
+      -webkit-transition: ease-in-out 0.5s;
+      transition: ease-in-out 0.5s; }
+    .scent-list .picture:hover .brand {
+      opacity: 0;
       -webkit-transition: ease-in-out 0.5s;
       transition: ease-in-out 0.5s; }
     .scent-list .picture:hover .details {
       opacity: 1;
       -webkit-transition: ease-in-out 0.5s;
       transition: ease-in-out 0.5s; }
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1400px) {
       .scent-list .picture {
         width: 45%;
         margin: 0 2.5%;
@@ -1161,12 +1202,15 @@ li {
       flex-direction: column;
       opacity: 0;
       -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s; }
+      transition: ease-in-out 0.5s;
+      padding: 0 3%; }
+      .scent-list .picture .details p {
+        color: #fff;
+        font-size: 15px; }
       .scent-list .picture .details span {
         width: 100%;
-        font-family: "Lato", "Arial", sans-serif;
-        font-size: 30px;
-        padding: 0 2%;
+        font-family: "Playfair Display", "Times", serif;
+        font-size: 25px;
         text-transform: inherit; }
 
 .guerlain {
