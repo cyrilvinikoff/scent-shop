@@ -1,7 +1,7 @@
 var basket = document.querySelector('.basket');
 var basketDetails = document.querySelector('.basket-details');
 
-if (window.innerWidth > 900) {
+if (window.innerWidth > 1050) {
   basket.addEventListener('mouseover', function() {
     basketDetails.style.opacity = 1;
     basketDetails.style.display = 'block';
