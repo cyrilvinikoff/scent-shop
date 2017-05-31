@@ -89,6 +89,8 @@ header {
       margin-left: 12%;
       height: 100%;
       padding: 1% 0; }
+      header nav li:last-child {
+        cursor: pointer; }
       header nav li span {
         font-family: "Playfair Display", "Times", serif; }
     header nav a {
