@@ -73,8 +73,6 @@ header {
       margin-left: 12%;
       height: 100%;
       padding: 1% 0; }
-      header nav li:last-child {
-        cursor: pointer; }
       header nav li span {
         font-family: "Playfair Display", "Times", serif; }
     header nav a {
@@ -278,21 +276,6 @@ header {
   100% {
     opacity: 1;
     margin-bottom: 0; } }
-/* .wokey {*/
-/*   -webkit-box-orient: vertical;*/
-/*   -webkit-box-direction: normal;*/
-/*   -ms-flex-direction: column;*/
-/*   flex-direction: column;*/
-/*   text-align: center;*/
-/*   -webkit-box-pack: justify;*/
-/*   -ms-flex-pack: justify;*/
-/*   justify-content: space-between;*/
-/*   -webkit-box-align: center;*/
-/*   -ms-flex-align: center;*/
-/*   align-items: center;*/
-/*   height: 50vh;*/
-/*   width: 100%;*/
-/* }*/
 footer {
   background-image: url("../../img-layout/banniere-footer.png");
   background-size: cover;
