@@ -14,13 +14,41 @@
       <a href="index.html">
         <h1>logo</h1>
       </a>
-      <img class="close" src="img-layout/close.png" alt="">
+      <img class="close" src="img-layout/close.png" alt="fermer le menu">
       <ul>
         <li><a href="products-list.html">nos parfums</a></li>
         <li><a href="account.html">mon compte</a></li>
-        <li><a href="#">mon panier <span id="count">0</span></a></li>
+        <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
       </ul>
-      <img class="burger" src="img-layout/menu.png" alt="">
+      <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
+      <div class="basket-details">
+        <div class="basket-product">
+          <figure>
+            <img src="img-content/ddd.png" alt="flacon chanel numero 5">
+          </figure>
+          <div class="details">
+            <span>Chanel N°5</span>
+            <span>Flacon de 100ml</span>
+            <span>Quantité : 1</span>
+            <span>Prix: 100€</span>
+          </div>
+        </div>
+        <div class="basket-product">
+          <figure>
+            <img src="img-content/joy-home.png" alt="flacon jean patou joy">
+          </figure>
+          <div class="details">
+            <span>Jean Patou - Joy</span>
+            <span>Flacon de 100ml</span>
+            <span>Quantité : 1</span>
+            <span>Prix: 100€</span>
+          </div>
+        </div>
+        <div class="pay">
+          <span>Total : 200€</span>
+          <a href="basket.html">payer</a>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="products">
@@ -377,6 +405,7 @@
   <script src="script/js/burger.js" charset="utf-8"></script>
   <!-- <script src="script/js/add-to-cart.js" charset="utf-8"></script> -->
   <script src="script/js/save-storage.js" charset="utf-8"></script>
+  <script src="script/js/show-basket.js" charset="utf-8"></script>
 
 </body>
 </html>
