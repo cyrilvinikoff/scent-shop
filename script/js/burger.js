@@ -2,6 +2,7 @@ var burger = document.querySelector('.burger');
 var close = document.querySelector('.close');
 var nav = document.querySelector('nav');
 var ul =  document.querySelector('nav ul');
+var li = document.querySelectorAll('nav ul li');
 
 burger.addEventListener('click', function(e) {
   burger.style.display = 'none';

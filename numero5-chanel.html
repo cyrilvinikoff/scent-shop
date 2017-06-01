@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Numero 5 | Eau de toilette de Chanel" />
-    <link rel="stylesheet" href="styles/css/screen.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <title>Titre du site | Parfum Numero 5 de Chanel</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <h1>logo</h1>
-        </a>
-        <img class="close" src="img-layout/close.png" alt="fermer le menu">
-        <ul>
-          <li><a href="products-list.html">nos parfums</a></li>
-          <li><a href="account.html">mon compte</a></li>
-          <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
-        </ul>
-        <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
-        <div class="basket-details">
-          <div class="basket-product">
-            <figure>
-              <img src="img-content/ddd.png" alt="flacon chanel numero 5">
-            </figure>
-            <div class="details">
-              <span>Chanel N°5</span>
-              <span>Flacon de 100ml</span>
-              <span>Quantité : 1</span>
-              <span>Prix: 100€</span>
-            </div>
-          </div>
-          <div class="basket-product">
-            <figure>
-              <img src="img-content/joy-home.png" alt="flacon jean patou joy">
-            </figure>
-            <div class="details">
-              <span>Jean Patou - Joy</span>
-              <span>Flacon de 100ml</span>
-              <span>Quantité : 1</span>
-              <span>Prix: 100€</span>
-            </div>
-          </div>
-          <div class="pay">
-            <span>Total : 200€</span>
-            <a href="basket.html">payer</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Numero 5 | Eau de toilette de Chanel" />
+  <link rel="stylesheet" href="styles/css/screen.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <title>Titre du site | Parfum Numero 5 de Chanel</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <h1>logo</h1>
+      </a>
+      <img class="close" src="img-layout/close.png" alt="fermer le menu">
+      <ul>
+        <li class="search-menu"><a href="#"><img src="img-layout/search.png" alt="rechercher un parfum"></a></li>
+        <li><a href="products-list.html">nos parfums</a></li>
+        <li><a href="account.html">mon compte</a></li>
+        <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
+      </ul>
+      <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
+      <div class="basket-details">
+        <div class="basket-product">
+          <figure>
+            <img src="img-content/ddd.png" alt="flacon chanel numero 5">
+          </figure>
+          <div class="details">
+            <span>Chanel N°5</span>
+            <span>Flacon de 100ml</span>
+            <span>Quantité : 1</span>
+            <span>Prix: 100€</span>
+            <img src="img-layout/close.png" alt="retirer l'article" width="15">
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="banner banner-numero">
-        <div class="scent-picture-left">
-            <figure>
-              <img src="img-content/ddd.png" alt="Flacon parfum Numero 5 de Chanel">
-            </figure>
+        <div class="basket-product">
+          <figure>
+            <img src="img-content/joy-home.png" alt="flacon jean patou joy">
+          </figure>
+          <div class="details">
+            <span>Jean Patou - Joy</span>
+            <span>Flacon de 100ml</span>
+            <span>Quantité : 1</span>
+            <span>Prix: 100€</span>
+            <img src="img-layout/close.png" alt="retirer l'article" width="15">
+          </div>
         </div>
-        <div class="arrow">
+        <div class="pay">
+          <span>Total : 200€</span>
+          <a href="basket.html">payer</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="search">
+    <img src="img-layout/close.png" alt="fermer la fenêtre de recherche" width="30">
+    <form class="" action="index.html" method="post">
+      <input type="text" name="" placeholder="Cherchez un parfum">
+    </form>
+  </div>
+  <main>
+    <section class="banner banner-numero">
+      <div class="scent-picture-left">
+        <figure>
+          <img src="img-content/ddd.png" alt="Flacon parfum Numero 5 de Chanel">
+        </figure>
+      </div>
+      <div class="arrow">
         <img src="img-layout/arrow.png" alt="scrollez pour découvrir">
-        </div>
-      </section>
-      <section class="scent-description-right">
-        <div class="scent-text" id="ancre">
-          <h2>chanel n° 5</h2>
-          <p>Description : Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié</p>
-          <span class="contain">Contenance : 100ml</span>
-          <form action="#ancre" method="post">
-            <label for="quantity">quantité :</label>
-            <select id="quantity" class="quantity" name="quantity">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </form>
-          <p class="scent-price">49.99€</p>
-          <a class="shop" href="#ancre">commander</a>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section class="scent-description-right">
+      <div class="scent-text" id="ancre">
+        <h2>chanel n° 5</h2>
+        <p>Description : Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié</p>
+        <span class="contain">Contenance : 100ml</span>
+        <form action="#ancre" method="post">
+          <label for="quantity">quantité :</label>
+          <select id="quantity" class="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </form>
+        <p class="scent-price">100€</p>
+        <a class="shop" href="#ancre">commander</a>
+      </div>
+    </section>
+  </main>
 
-    <script src="script/js/burger.js" charset="utf-8"></script>
-    <script src="script/js/save-storage.js" charset="utf-8"></script>
-    <script src="script/js/add-to-cart.js" charset="utf-8"></script>
-    <script src="script/js/show-basket.js" charset="utf-8"></script>
-  </body>
+  <script src="script/js/show-search.js" charset="utf-8"></script>
+  <script src="script/js/scroll-gestion.js" charset="utf-8"></script>
+  <script src="script/js/price-calculation.js" charset="utf-8"></script>
+  <script src="script/js/remove-from-basket.js" charset="utf-8"></script>
+  <script src="script/js/burger.js" charset="utf-8"></script>
+  <script src="script/js/save-storage.js" charset="utf-8"></script>
+  <script src="script/js/add-to-cart.js" charset="utf-8"></script>
+  <script src="script/js/show-basket.js" charset="utf-8"></script>
+</body>
 </html>
