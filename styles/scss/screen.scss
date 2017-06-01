@@ -121,7 +121,10 @@ li {
 }
 
 .scent-list {
-  width: 60%;
+  width: 70%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 7%;
   display: -webkit-box;
@@ -156,30 +159,30 @@ li {
   }
   .picture {
     position: relative;
-    width: 25%;
+    width: 27%;
     text-align: center;
     background-image:-webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image:linear-gradient(black, white);
     margin-bottom: 5%;
-    padding: 5% 3% 0 3%;
+    padding: 5% 2% 0 2%;
     &:hover img {
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
     }
      &:hover h4 {
        opacity: 0;
-       -webkit-transition: ease-in-out 0.5s;
-       transition: ease-in-out 0.5s;
+       -webkit-transition: ease-in-out 0.2s;
+       transition: ease-in-out 0.2s;
      }
      &:hover .brand {
        opacity: 0;
-        -webkit-transition: ease-in-out 0.5s;
-       transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.2s;
+       transition: ease-in-out 0.2s;
      }
     &:hover .details {
       opacity: 1;
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
     }
     @media screen and (max-width: 1400px) {
       width: 45%;
@@ -215,16 +218,12 @@ li {
           font-size: 14px;
         }
       }
-      figure{
-        width: 70%;
-        margin: 0 auto;
         img {
-          width: 100%;
-          margin-top: 15%;
+          width: 90%;
+          margin: 0 auto;
           -webkit-transition: ease-in-out 0.2s;
           transition: ease-in-out 0.2s;
         }
-      }
     }
     .details {
       background: rgba(0,0,0,0.41);
@@ -263,26 +262,6 @@ li {
       }
     }
   }
-}
-
-.guerlain  {
-  padding-top: 20%;
-}
-.joy {
-  padding-top: 60%;
-}
-.chanel {
-  padding-top: 10%;
-}
-.bleu {
-  padding-top: 45%;
-}
-.invictus {
-  padding-top: 18%;
-}
-#sauvage {
-  padding-top: 17%;
-  width: 75%;
 }
 
 .scent-pack {

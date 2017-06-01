@@ -1,4 +1,4 @@
-var remove = document.querySelectorAll('.details img');
+var remove = document.querySelectorAll('.cross');
 var item = document.querySelectorAll('.basket-product');
 var total = document.querySelectorAll('.pay span');
 

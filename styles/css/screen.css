@@ -110,7 +110,7 @@ header {
       background-color: #fff;
       color: #000; }
     header nav .basket-details {
-      top: 100%;
+      top: 98%;
       left: 84%;
       width: 21%;
       position: absolute;
@@ -144,9 +144,12 @@ header {
           padding: 0 2%;
           float: left; }
           header nav .basket-details .basket-product figure img {
-            width: 100%; }
+            width: 100%;
+            padding-right: 10%; }
+        header nav .basket-details .basket-product .cross {
+          cursor: pointer; }
         header nav .basket-details .basket-product .details {
-          width: 70%;
+          width: 60%;
           color: #fff;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -164,9 +167,6 @@ header {
           header nav .basket-details .basket-product .details span:first-child {
             font-weight: 700;
             font-size: 15px; }
-          header nav .basket-details .basket-product .details img {
-            margin-top: 7%;
-            cursor: pointer; }
       header nav .basket-details .pay {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -314,11 +314,11 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: #000;
   display: none;
   opacity: 0;
-  -webkit-animation: search ease-in-out 1s;
-  animation: search ease-in-out 1s; }
+  -webkit-animation: search ease-in-out 0.5s;
+  animation: search ease-in-out 0.5s; }
   .search img {
     cursor: pointer;
     -webkit-transition: ease-in-out 0.2s;
@@ -335,7 +335,6 @@ header {
       width: 50%;
       text-align: center;
       font-size: 50px;
-      border-radius: 50px;
       outline: none;
       font-family: "Playfair Display", "Times", serif; }
       @media only screen and (max-width: 1100px) {
@@ -344,6 +343,12 @@ header {
       @media only screen and (max-width: 800px) {
         .search form input {
           font-size: 15px; } }
+      .search form input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .search form input:focus:-ms-input-placeholder {
+        color: transparent; }
+      .search form input:focus::placeholder {
+        color: transparent; }
 
 @-webkit-keyframes search {
   0% {
@@ -807,9 +812,9 @@ form {
 .products {
   width: 80%;
   margin: 0 auto; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .products {
-      width: 70%; } }
+      width: 60%; } }
   .products h2 {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -821,7 +826,7 @@ form {
       .products h2 {
         font-size: 33px;
         margin-top: 13%; } }
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 700px) {
       .products h2 {
         font-size: 23px;
         margin-top: 25%; } }
@@ -840,11 +845,8 @@ form {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    /* -webkit-box-align: stretch;*/
-    /* -ms-flex-align: stretch;*/
-    /* align-items: stretch;*/
     margin-top: 7%; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
       .products section {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -856,7 +858,7 @@ form {
       margin-bottom: 7%;
       font-size: 30px;
       font-weight: 500; }
-      @media screen and (max-width: 760px) {
+      @media screen and (max-width: 700px) {
         .products section h3 {
           font-size: 20px;
           margin-top: 5%; } }
@@ -873,20 +875,20 @@ form {
       text-transform: uppercase;
       text-align: center; }
       .products section .picture:hover img {
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s; }
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; }
       .products section .picture:hover .details {
         opacity: 1;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s; }
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; }
       .products section .picture:hover h4 {
         opacity: 0;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s; }
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; }
       .products section .picture:hover .brand {
         opacity: 0;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s; }
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s; }
       .products section .picture .details {
         background: rgba(0, 0, 0, 0.41);
         background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.41)), color-stop(0%, rgba(231, 56, 39, 0.41)), color-stop(0%, rgba(0, 0, 0, 0.41)), color-stop(51%, rgba(0, 0, 0, 0.59)), color-stop(100%, rgba(0, 0, 0, 0.76)));
@@ -912,6 +914,8 @@ form {
         -webkit-transition: ease-in-out 0.5s;
         transition: ease-in-out 0.5s;
         padding: 0 3%; }
+        .products section .picture .details p {
+          text-transform: lowercase; }
         .products section .picture .details span {
           width: 100%;
           font-family: "Lato", "Arial", sans-serif;
@@ -925,23 +929,15 @@ form {
       @media screen and (max-width: 1605px) {
         .products section .picture {
           width: 30%; } }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1200px) {
         .products section .picture {
           width: 45%; } }
       @media screen and (max-width: 700px) {
         .products section .picture {
           width: 100%;
-          margin-bottom: 10%;
-          padding: 5% 25% 0 25%; } }
-      .products section .picture figure {
-        margin-top: 15%;
-        /* display: -webkit-box;*/
-        /* display: -ms-flexbox;*/
-        /* display: flex;*/
-        /* -ms-flex-item-align: center;*/
-        /* align-self: center;*/ }
+          margin-bottom: 10%; } }
       .products section .picture img {
-        width: 40%; }
+        width: 70%; }
       .products section .picture h4 {
         font-size: 26px; }
         @media screen and (max-width: 760px) {
@@ -954,52 +950,6 @@ form {
           .products section .picture span {
             font-size: 14px; } }
 
-/* .chanel-list {*/
-/*   padding-top: 55%;*/
-/* }*/
-/**/
-/* .joy-pro {*/
-/*   padding-top: 100%;*/
-/* }*/
-/**/
-/* .guerlain-pro {*/
-/*   padding-top: 65%;*/
-/* }*/
-/**/
-/* .ysl {*/
-/*   padding: 85% 10% 0 10%;*/
-/* }*/
-/* .vie {*/
-/*   padding: 45% 0 0 5%;*/
-/* }*/
-/**/
-/* .jadore {*/
-/*   padding: 60% 30% 0 30%;*/
-/* }*/
-/**/
-/* .robe {*/
-/*   padding: 70% 20% 0 20%;*/
-/* }*/
-/**/
-/* .coco {*/
-/*   padding: 55% 15% 0 15%;*/
-/* }*/
-/**/
-/* .shalimar {*/
-/*   padding: 60% 7% 0 7%;*/
-/* }*/
-/**/
-/* .miss {*/
-/*   padding: 50% 10% 0 10%;*/
-/* }*/
-/**/
-/* .live {*/
-/*   padding: 20% 30% 0 30%;*/
-/* }*/
-/**/
-/* .classique {*/
-/*   padding: 42% 25% 0 25%;*/
-/* }*/
 .account {
   width: 70%;
   margin: 0 auto;
@@ -1160,7 +1110,10 @@ li {
     bottom: 8%;
     opacity: 0.5; } }
 .scent-list {
-  width: 60%;
+  width: 70%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 7%;
   display: -webkit-box;
@@ -1194,27 +1147,27 @@ li {
         margin-top: 5%; } }
   .scent-list .picture {
     position: relative;
-    width: 25%;
+    width: 27%;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image: linear-gradient(black, white);
     margin-bottom: 5%;
-    padding: 5% 3% 0 3%; }
+    padding: 5% 2% 0 2%; }
     .scent-list .picture:hover img {
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s; }
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     .scent-list .picture:hover h4 {
       opacity: 0;
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s; }
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     .scent-list .picture:hover .brand {
       opacity: 0;
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s; }
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     .scent-list .picture:hover .details {
       opacity: 1;
-      -webkit-transition: ease-in-out 0.5s;
-      transition: ease-in-out 0.5s; }
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     @media screen and (max-width: 1400px) {
       .scent-list .picture {
         width: 45%;
@@ -1245,14 +1198,11 @@ li {
       @media screen and (max-width: 760px) {
         .scent-list .picture div span {
           font-size: 14px; } }
-    .scent-list .picture div figure {
-      width: 70%;
-      margin: 0 auto; }
-      .scent-list .picture div figure img {
-        width: 100%;
-        margin-top: 15%;
-        -webkit-transition: ease-in-out 0.2s;
-        transition: ease-in-out 0.2s; }
+    .scent-list .picture div img {
+      width: 90%;
+      margin: 0 auto;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s; }
     .scent-list .picture .details {
       background: rgba(0, 0, 0, 0.41);
       background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.41)), color-stop(0%, rgba(231, 56, 39, 0.41)), color-stop(0%, rgba(0, 0, 0, 0.41)), color-stop(51%, rgba(0, 0, 0, 0.59)), color-stop(100%, rgba(0, 0, 0, 0.76)));
@@ -1286,25 +1236,6 @@ li {
         font-family: "Playfair Display", "Times", serif;
         font-size: 25px;
         text-transform: inherit; }
-
-.guerlain {
-  padding-top: 20%; }
-
-.joy {
-  padding-top: 60%; }
-
-.chanel {
-  padding-top: 10%; }
-
-.bleu {
-  padding-top: 45%; }
-
-.invictus {
-  padding-top: 18%; }
-
-#sauvage {
-  padding-top: 17%;
-  width: 75%; }
 
 .scent-pack {
   width: 85%;

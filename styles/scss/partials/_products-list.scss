@@ -1,8 +1,8 @@
 .products {
   width: 80%;
   margin: 0 auto;
-  @media screen and (max-width: 600px) {
-    width: 70%;
+  @media screen and (max-width: 700px) {
+    width: 60%;
   }
   h2 {
     margin-top: 10%;
@@ -15,7 +15,7 @@
       font-size: 33px;
       margin-top: 13%;
     }
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 700px) {
       font-size: 23px;
       margin-top: 25%;
     }
@@ -35,11 +35,8 @@
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    /* -webkit-box-align: stretch;*/
-    /* -ms-flex-align: stretch;*/
-    /* align-items: stretch;*/
     margin-top: 7%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -51,7 +48,7 @@
       margin-bottom: 7%;
       font-size: 30px;
       font-weight: 500;
-      @media screen and (max-width: 760px) {
+      @media screen and (max-width: 700px) {
         font-size: 20px;
         margin-top: 5%;
       }
@@ -69,23 +66,23 @@
       text-transform: uppercase;
       text-align: center;
       &:hover img {
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s;
       }
       &:hover .details {
         opacity: 1;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s;
       }
       &:hover h4 {
         opacity: 0;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s;
       }
       &:hover .brand {
         opacity: 0;
-        -webkit-transition: ease-in-out 0.5s;
-        transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s;
       }
       .details {
         background: rgba(0,0,0,0.41);
@@ -112,6 +109,9 @@
         -webkit-transition: ease-in-out 0.5s;
         transition: ease-in-out 0.5s;
         padding: 0 3%;
+        p {
+          text-transform: lowercase;
+        }
         span {
           width: 100%;
           font-family: $ft-content;
@@ -129,24 +129,15 @@
       @media screen and (max-width: 1605px) {
         width: 30%;
       }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1200px) {
         width: 45%;
       }
       @media screen and (max-width: 700px) {
         width: 100%;
         margin-bottom: 10%;
-        padding: 5% 25% 0 25%;
-      }
-      figure {
-        margin-top: 15%;
-        /* display: -webkit-box;*/
-        /* display: -ms-flexbox;*/
-        /* display: flex;*/
-        /* -ms-flex-item-align: center;*/
-        /* align-self: center;*/
       }
       img {
-        width: 40%;
+        width: 70%;
       }
       h4 {
         font-size: 26px;
@@ -164,51 +155,3 @@
     }
   }
 }
-
-/* .chanel-list {*/
-/*   padding-top: 55%;*/
-/* }*/
-/**/
-/* .joy-pro {*/
-/*   padding-top: 100%;*/
-/* }*/
-/**/
-/* .guerlain-pro {*/
-/*   padding-top: 65%;*/
-/* }*/
-/**/
-/* .ysl {*/
-/*   padding: 85% 10% 0 10%;*/
-/* }*/
-
-/* .vie {*/
-/*   padding: 45% 0 0 5%;*/
-/* }*/
-/**/
-/* .jadore {*/
-/*   padding: 60% 30% 0 30%;*/
-/* }*/
-/**/
-/* .robe {*/
-/*   padding: 70% 20% 0 20%;*/
-/* }*/
-/**/
-/* .coco {*/
-/*   padding: 55% 15% 0 15%;*/
-/* }*/
-/**/
-/* .shalimar {*/
-/*   padding: 60% 7% 0 7%;*/
-/* }*/
-/**/
-/* .miss {*/
-/*   padding: 50% 10% 0 10%;*/
-/* }*/
-/**/
-/* .live {*/
-/*   padding: 20% 30% 0 30%;*/
-/* }*/
-/**/
-/* .classique {*/
-/*   padding: 42% 25% 0 25%;*/
-/* }*/
