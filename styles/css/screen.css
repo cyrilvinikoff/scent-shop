@@ -431,11 +431,10 @@ footer {
         footer .footer-container .account-container {
           margin: 0 auto;
           margin-bottom: 5%; } }
-      footer .footer-container .account-container .account {
+      footer .footer-container .account-container .sitemap {
         width: 80%;
-        margin: 0 auto;
-        padding-top: 0; }
-        footer .footer-container .account-container .account ul {
+        margin: 0 auto; }
+        footer .footer-container .account-container .sitemap ul {
           width: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -447,13 +446,13 @@ footer {
           flex-wrap: wrap;
           text-align: center; }
           @media screen and (max-width: 1250px) {
-            footer .footer-container .account-container .account ul {
+            footer .footer-container .account-container .sitemap ul {
               -webkit-box-orient: vertical;
               -webkit-box-direction: normal;
               -ms-flex-direction: column;
               flex-direction: column;
               margin: 7% 0; } }
-          footer .footer-container .account-container .account ul li {
+          footer .footer-container .account-container .sitemap ul li {
             width: 33.3333333%;
             text-align: center;
             font-family: "Playfair Display", "Times", serif;
@@ -461,10 +460,10 @@ footer {
             line-height: 27px;
             font-weight: 700; }
             @media screen and (max-width: 1250px) {
-              footer .footer-container .account-container .account ul li {
+              footer .footer-container .account-container .sitemap ul li {
                 width: 100%;
                 font-size: 15px; } }
-            footer .footer-container .account-container .account ul li a {
+            footer .footer-container .account-container .sitemap ul li a {
               color: #fff;
               font-family: "Playfair Display", "Times", serif;
               font-size: 18px;
