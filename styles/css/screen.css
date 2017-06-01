@@ -433,7 +433,8 @@ footer {
           margin-bottom: 5%; } }
       footer .footer-container .account-container .account {
         width: 80%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        padding-top: 0; }
         footer .footer-container .account-container .account ul {
           width: 100%;
           display: -webkit-box;
