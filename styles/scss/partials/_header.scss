@@ -21,7 +21,6 @@ header {
     align-items: center;
     @media only screen and (max-width: 900px) {
       padding: 0 5%;
-      width: 90%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -34,23 +33,23 @@ header {
       text-transform: uppercase;
     }
     ul {
+      display: none;
       height: 100%;
       width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      @media only screen and (max-width: 900px) {
-        display: none;
+      @media only screen and (min-width: 900px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
       }
     }
     li {
       text-transform: uppercase;
-      margin-left: 9%;
+      margin-left: 0;
       height: 100%;
       padding: 1% 0;
       display: -webkit-box;
@@ -59,8 +58,8 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      @media only screen and (max-width: 900px) {
-        margin-left: 0;
+      @media only screen and (min-width: 900px) {
+        margin-left: 9%;
       }
       span {
         font-family: $ft-title;
@@ -70,10 +69,12 @@ header {
         cursor: pointer;
       }
     }
+
     a {
       color: #fff;
       font-family: $ft-title;
     }
+
     #count {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -94,6 +95,7 @@ header {
       background-color: $white;
       color: $black;
     }
+
     .basket-details {
       top: 98%;
       left: 84%;
@@ -102,18 +104,19 @@ header {
       background-color: rgba(0, 0, 0, 0.95);
       color: $black;
       border: 1px solid #fff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       display: none;
       opacity: 0;
       @media only screen and (max-width: 1050px) {
         visibility: hidden;
       }
+
       .basket-product {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -226,12 +229,12 @@ header {
 }
 
 .burger {
-  display: none;
+  display: block;
   height: 30px;
   width: auto;
   cursor: pointer;
-  @media only screen and (max-width: 900px) {
-    display: block;
+  @media only screen and (min-width: 900px) {
+    display: none;
   }
 }
 
@@ -268,7 +271,7 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+    -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -334,6 +337,9 @@ header {
   background-color: $black;
   display: none;
   opacity: 0;
+  /* -webkit-animation: search ease-in-out 2s;*/
+  /* animation: search ease-in-out 2s;*/
+
   img {
     cursor: pointer;
     -webkit-transition: ease-in-out 0.2s;
@@ -351,14 +357,14 @@ header {
     input {
       width: 50%;
       text-align: center;
-      font-size: 50px;
       outline: none;
       font-family: $ft-title;
-      @media only screen and (max-width: 1100px) {
+      font-size: 15px;
+      @media only screen and (min-width: 800px) {
         font-size: 20px;
-      }
-      @media only screen and (max-width: 800px) {
-        font-size: 15px;
+        @media only screen and (min-width: 1100px) {
+          font-size: 50px;
+        }
       }
       &:focus {
         &::-webkit-input-placeholder {
@@ -375,34 +381,34 @@ header {
   }
 }
 
-@-webkit-keyframes search {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes search {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+/* @-webkit-keyframes search {*/
+/*   0% {*/
+/*     -webkit-transform: scale(0.5);*/
+/*     transform: scale(0.5);*/
+/*     opacity: 0;*/
+/*   }*/
+/*   50% {*/
+/*     opacity: 0.5;*/
+/*   }*/
+/*   100% {*/
+/*     -webkit-transform: scale(1);*/
+/*     transform: scale(1);*/
+/*     opacity: 1;*/
+/*   }*/
+/* }*/
+/**/
+/* @keyframes search {*/
+/*   0% {*/
+/*     -webkit-transform: scale(0.5);*/
+/*     transform: scale(0.5);*/
+/*     opacity: 0;*/
+/*   }*/
+/*   50% {*/
+/*     opacity: 0.5;*/
+/*   }*/
+/*   100% {*/
+/*     -webkit-transform: scale(1);*/
+/*     transform: scale(1);*/
+/*     opacity: 1;*/
+/*   }*/
+/* }*/

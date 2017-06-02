@@ -1,11 +1,11 @@
 .banner {
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   height: 100vh;
   width: 100%;
-  @media screen and (max-width: 760px) {
-    background-position: right;
+  @media screen and (min-width: 760px) {
+    background-position: center;
   }
   .arrow {
     text-align: center;
@@ -18,60 +18,49 @@
     animation: scroll ease-in-out 2s infinite;
   }
   .scent-picture {
-    position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
     height: 100vh;
+    position: static;
+    width: 100%;
+    padding: 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1.5% 8% 0 0;
-    @media screen and (max-width: 760px) {
-      position: static;
-      width: 100%;
-      padding: 0 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @media screen and (min-width: 760px) {
+      position: fixed;
+      width: 50%;
+      padding: 1.5% 8% 0 0;
     }
   }
   figure {
-    @media screen and (max-width: 760px) {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   img {
-    width: 100%;
-    @media screen and (max-width: 760px) {
-      width: 40%;
+    width: 40%;
+    @media screen and (min-width: 760px) {
+      width: 100%;
     }
   }
   .scent-picture-left {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -82,24 +71,14 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1.5% 0 0 8%;
-    @media screen and (max-width: 760px) {
-      position: static;
-      width: 100%;
-      padding: 0 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    padding: 0 0;
+    @media screen and (min-width: 760px) {
+      position: fixed;
+      width: 50%;
+      padding: 1.5% 0 0 8%;
     }
   }
   figure {
-    @media screen and (max-width: 760px) {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -109,12 +88,11 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-    }
   }
   img {
-    width: 100%;
-    @media screen and (max-width: 760px) {
-      width: 40%;
+    width: 40%;
+    @media screen and (min-width: 760px) {
+      width: 100%;
     }
   }
 }
@@ -149,37 +127,41 @@
   -ms-flex-align: center;
   align-items: center;
   .scent-text {
-    width: 50%;
-    padding: 0 7%;
+    width: 100%;
+    padding: 4% 7%;
     margin-top: 1.5%;
-    @media screen and (max-width: 760px) {
-      width: 100%;
-      padding: 4% 7%;
+    @media screen and (min-width: 760px) {
+      width: 50%;
+      padding: 0 7%;
     }
     h2 {
       text-transform: uppercase;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 300;
       margin-bottom: 4%;
-      @media screen and (max-width: 760px) {
-        font-size: 24px;
+      @media screen and (min-width: 760px) {
+        font-size: 30px;
       }
     }
     p {
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 18px;
       margin-bottom: 6%;
-      @media screen and (max-width: 760px) {
-        font-size: 12px;
-        line-height: 18px;
+      @media screen and (min-width: 760px) {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 18px;
+        line-height: 27px;
       }
     }
     .scent-price {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%;
-      @media screen and (max-width: 760px) {
-        font-size: 20px;
+      @media screen and (min-width: 760px) {
+        font-size: 24px;
       }
     }
     a {
@@ -192,14 +174,14 @@
       transition: ease-in-out 0.3s;
     }
     a:hover {
-      background-color: $black;
-      color: $white;
+      background-color: $white;
+      color: $black;
       border: 1px solid $black;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s;
-      @media screen and (max-width: 700px) {
-        background-color: $white;
-        color: $black;
+      @media screen and (min-width: 700px) {
+        background-color: $black;
+        color: $white;
         border: 1px solid $black;
       }
     }
@@ -209,6 +191,7 @@
 .scent-description-right {
   height: 100vh;
   width: 100%;
+  padding: 7% 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,42 +201,45 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  @media screen and (max-width: 760px) {
-    width: 100%;
-    padding: 7% 7%;
+  @media screen and (min-width: 760px) {
+    padding: 0 0;
   }
   .scent-text {
-    width: 50%;
-    padding: 0 7%;
+    width: 100%;
+    padding: 4% 7%;
     margin-top: 1.5%;
-    @media screen and (max-width: 760px) {
-      width: 100%;
-      padding: 4% 7%;
+    @media screen and (min-width: 760px) {
+      width: 50%;
+      padding: 0 7%;
     }
     h2 {
       text-transform: uppercase;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 300;
       margin-bottom: 4%;
-      @media screen and (max-width: 760px) {
-        font-size: 24px;
+      @media screen and (min-width: 760px) {
+        font-size: 30px;
       }
     }
     p {
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 18px;
       margin-bottom: 6%;
-      @media screen and (max-width: 760px) {
-        font-size: 12px;
-        line-height: 18px;
+      @media screen and (min-width: 760px) {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 18px;
+        line-height: 27px;
       }
     }
     .scent-price {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%;
-      @media screen and (max-width: 760px) {
-        font-size: 20px;
+      @media screen and (min-width: 760px) {
+        font-size: 24px;
       }
     }
     a {
@@ -266,14 +252,14 @@
       transition: ease-in-out 0.3s;
     }
     a:hover {
-      background-color: $black;
-      color: $white;
+      background-color: $white;
+      color: $black;
       border: 1px solid $black;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s;
-      @media screen and (max-width: 760px) {
-        background-color: $white;
-        color: $black;
+      @media screen and (min-width: 760px) {
+        background-color: $black;
+        color: $white;
         border: 1px solid $black;
       }
     }

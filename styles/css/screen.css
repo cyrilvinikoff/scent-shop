@@ -44,7 +44,6 @@ header {
     @media only screen and (max-width: 900px) {
       header nav {
         padding: 0 5%;
-        width: 90%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -55,22 +54,22 @@ header {
       font-family: "Lato", "Arial", sans-serif;
       text-transform: uppercase; }
     header nav ul {
+      display: none;
       height: 100%;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      @media only screen and (max-width: 900px) {
+      width: 100%; }
+      @media only screen and (min-width: 900px) {
         header nav ul {
-          display: none; } }
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; } }
     header nav li {
       text-transform: uppercase;
-      margin-left: 9%;
+      margin-left: 0;
       height: 100%;
       padding: 1% 0;
       display: -webkit-box;
@@ -79,9 +78,9 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (min-width: 900px) {
         header nav li {
-          margin-left: 0; } }
+          margin-left: 9%; } }
       header nav li span {
         font-family: "Playfair Display", "Times", serif; }
       header nav li img {
@@ -117,13 +116,13 @@ header {
       background-color: rgba(0, 0, 0, 0.95);
       color: #000;
       border: 1px solid #fff;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       display: none;
       opacity: 0; }
       @media only screen and (max-width: 1050px) {
@@ -223,13 +222,13 @@ header {
       cursor: pointer; }
 
 .burger {
-  display: none;
+  display: block;
   height: 30px;
   width: auto;
   cursor: pointer; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 900px) {
     .burger {
-      display: block; } }
+      display: none; } }
 
 .nav-extend {
   display: -webkit-box;
@@ -316,7 +315,9 @@ header {
   bottom: 0;
   background-color: #000;
   display: none;
-  opacity: 0; }
+  opacity: 0;
+  /* -webkit-animation: search ease-in-out 2s;*/
+  /* animation: search ease-in-out 2s;*/ }
   .search img {
     cursor: pointer;
     -webkit-transition: ease-in-out 0.2s;
@@ -332,15 +333,16 @@ header {
     .search form input {
       width: 50%;
       text-align: center;
-      font-size: 50px;
       outline: none;
-      font-family: "Playfair Display", "Times", serif; }
-      @media only screen and (max-width: 1100px) {
+      font-family: "Playfair Display", "Times", serif;
+      font-size: 15px; }
+      @media only screen and (min-width: 800px) {
         .search form input {
           font-size: 20px; } }
-      @media only screen and (max-width: 800px) {
-        .search form input {
-          font-size: 15px; } }
+  @media only screen and (min-width: 800px) and (min-width: 1100px) {
+    .search form input {
+      font-size: 50px; } }
+
       .search form input:focus::-webkit-input-placeholder {
         color: transparent; }
       .search form input:focus:-ms-input-placeholder {
@@ -348,28 +350,37 @@ header {
       .search form input:focus::placeholder {
         color: transparent; }
 
-@-webkit-keyframes search {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-@keyframes search {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
+/* @-webkit-keyframes search {*/
+/*   0% {*/
+/*     -webkit-transform: scale(0.5);*/
+/*     transform: scale(0.5);*/
+/*     opacity: 0;*/
+/*   }*/
+/*   50% {*/
+/*     opacity: 0.5;*/
+/*   }*/
+/*   100% {*/
+/*     -webkit-transform: scale(1);*/
+/*     transform: scale(1);*/
+/*     opacity: 1;*/
+/*   }*/
+/* }*/
+/**/
+/* @keyframes search {*/
+/*   0% {*/
+/*     -webkit-transform: scale(0.5);*/
+/*     transform: scale(0.5);*/
+/*     opacity: 0;*/
+/*   }*/
+/*   50% {*/
+/*     opacity: 0.5;*/
+/*   }*/
+/*   100% {*/
+/*     -webkit-transform: scale(1);*/
+/*     transform: scale(1);*/
+/*     opacity: 1;*/
+/*   }*/
+/* }*/
 footer {
   background-image: url("../../img-layout/banniere-footer.png");
   background-size: cover;
@@ -379,26 +390,29 @@ footer {
     width: 90%;
     margin: 0 auto;
     color: #fff;
-    padding: 9% 0 5% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    @media screen and (max-width: 1250px) {
+    padding: 9% 0 5% 0; }
+    @media screen and (min-width: 1250px) {
       footer .footer-container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
     footer .footer-container div {
-      width: 50%; }
-      @media screen and (max-width: 1250px) {
+      width: 100%;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      @media screen and (min-width: 1250px) {
         footer .footer-container div {
-          width: 100%;
-          text-align: center;
-          -webkit-box-orient: vertical;
+          width: 50%;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column; } }
+          -ms-flex-direction: row;
+          flex-direction: row; } }
     footer .footer-container .contact {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -406,7 +420,8 @@ footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      font-size: 12px; }
       footer .footer-container .contact span {
         font-family: "Playfair Display", "Times", serif;
         font-size: 15px;
@@ -418,22 +433,20 @@ footer {
           font-weight: 300;
           line-height: 22.5px;
           color: #fff; }
-        @media screen and (max-width: 1250px) {
+        @media screen and (min-width: 1250px) {
           footer .footer-container .contact span {
-            font-size: 12px; } }
+            font-size: 15px; } }
       footer .footer-container .contact span:first-child {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 300;
         margin-bottom: 3%; }
-        @media screen and (max-width: 1250px) {
+        @media screen and (min-width: 1250px) {
           footer .footer-container .contact span:first-child {
-            font-size: 17px; } }
+            font-size: 20px; } }
     footer .footer-container .account-container {
-      width: 70%; }
-      @media screen and (max-width: 1250px) {
-        footer .footer-container .account-container {
-          margin: 0 auto;
-          margin-bottom: 5%; } }
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 5%; }
       footer .footer-container .account-container .sitemap {
         width: 80%;
         margin: 0 auto; }
@@ -447,25 +460,30 @@ footer {
           justify-content: space-between;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-          text-align: center; }
-          @media screen and (max-width: 1250px) {
+          text-align: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 7% 0; }
+          @media screen and (min-width: 1250px) {
             footer .footer-container .account-container .sitemap ul {
-              -webkit-box-orient: vertical;
+              margin: 0 0;
+              -webkit-box-orient: horizontal;
               -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              margin: 7% 0; } }
+              -ms-flex-direction: row;
+              flex-direction: row; } }
           footer .footer-container .account-container .sitemap ul li {
-            width: 33.3333333%;
+            width: 100%;
             text-align: center;
             font-family: "Playfair Display", "Times", serif;
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: 300; }
-            @media screen and (max-width: 1250px) {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 27px; }
+            @media screen and (min-width: 1250px) {
               footer .footer-container .account-container .sitemap ul li {
-                width: 100%;
-                font-size: 15px; } }
+                width: 33.3333333%;
+                font-size: 18px; } }
             footer .footer-container .account-container .sitemap ul li a {
               color: #fff;
               font-family: "Playfair Display", "Times", serif;
@@ -476,25 +494,27 @@ footer {
         border: 1px solid #fff;
         width: 50%;
         margin: 0 auto;
-        margin-top: 3.5%; }
-        @media screen and (max-width: 1250px) {
+        margin-top: 1%; }
+        @media screen and (min-width: 1250px) {
           footer .footer-container .account-container .line {
-            margin-top: 1%; } }
+            margin-top: 3.5%; } }
     footer .footer-container .newsletter {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      @media screen and (max-width: 1250px) {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      @media screen and (min-width: 1250px) {
         footer .footer-container .newsletter {
-          width: 100%;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; } }
+          width: 50%;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; } }
       footer .footer-container .newsletter div {
-        width: 70%;
+        width: 100%;
+        text-align: center;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -502,30 +522,29 @@ footer {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
-        @media screen and (max-width: 1250px) {
+        @media screen and (min-width: 1250px) {
           footer .footer-container .newsletter div {
-            width: 100%;
-            text-align: center; } }
+            width: 70%; } }
         footer .footer-container .newsletter div span {
           font-family: "Playfair Display", "Times", serif;
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 300;
-          margin-bottom: 8%; }
-          @media screen and (max-width: 1250px) {
+          margin-bottom: 4%; }
+          @media screen and (min-width: 1250px) {
             footer .footer-container .newsletter div span {
-              margin-bottom: 4%;
-              font-size: 15px; } }
+              margin-bottom: 8%;
+              font-size: 20px; } }
         footer .footer-container .newsletter div form {
-          width: 90%;
+          width: 70%;
           background-color: transparent;
           border: 1px solid #fff;
           color: #fff;
-          padding: 3.5% 2%; }
-          @media screen and (max-width: 1250px) {
+          padding: 2% 1%;
+          margin: 0 auto; }
+          @media screen and (min-width: 1250px) {
             footer .footer-container .newsletter div form {
-              padding: 2% 1%;
-              width: 70%;
-              margin: 0 auto; } }
+              width: 90%;
+              padding: 3.5% 2%; } }
           footer .footer-container .newsletter div form input:first-child {
             width: 80%;
             padding: 2% 2%;
@@ -544,12 +563,12 @@ footer {
 .banner {
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   height: 100vh;
   width: 100%; }
-  @media screen and (max-width: 760px) {
+  @media screen and (min-width: 760px) {
     .banner {
-      background-position: right; } }
+      background-position: center; } }
   .banner .arrow {
     text-align: center;
     position: absolute;
@@ -560,56 +579,46 @@ footer {
     -webkit-animation: scroll ease-in-out 2s infinite;
     animation: scroll ease-in-out 2s infinite; }
   .banner .scent-picture {
-    position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
     height: 100vh;
+    position: static;
+    width: 100%;
+    padding: 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1.5% 8% 0 0; }
-    @media screen and (max-width: 760px) {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media screen and (min-width: 760px) {
       .banner .scent-picture {
-        position: static;
-        width: 100%;
-        padding: 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; } }
-  @media screen and (max-width: 760px) {
-    .banner figure {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+        position: fixed;
+        width: 50%;
+        padding: 1.5% 8% 0 0; } }
+  .banner figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .banner img {
-    width: 100%; }
-    @media screen and (max-width: 760px) {
+    width: 40%; }
+    @media screen and (min-width: 760px) {
       .banner img {
-        width: 40%; } }
+        width: 100%; } }
   .banner .scent-picture-left {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,37 +629,27 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1.5% 0 0 8%; }
-    @media screen and (max-width: 760px) {
+    padding: 0 0; }
+    @media screen and (min-width: 760px) {
       .banner .scent-picture-left {
-        position: static;
-        width: 100%;
-        padding: 0 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; } }
-  @media screen and (max-width: 760px) {
-    .banner figure {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; } }
+        position: fixed;
+        width: 50%;
+        padding: 1.5% 0 0 8%; } }
+  .banner figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .banner img {
-    width: 100%; }
-    @media screen and (max-width: 760px) {
+    width: 40%; }
+    @media screen and (min-width: 760px) {
       .banner img {
-        width: 40%; } }
+        width: 100%; } }
 
 .banner-sauvage {
   background-image: url("../../img-layout/banniere-sauvage-dior.png"); }
@@ -677,36 +676,40 @@ footer {
   -ms-flex-align: center;
   align-items: center; }
   .scent-description .scent-text {
-    width: 50%;
-    padding: 0 7%;
+    width: 100%;
+    padding: 4% 7%;
     margin-top: 1.5%; }
-    @media screen and (max-width: 760px) {
+    @media screen and (min-width: 760px) {
       .scent-description .scent-text {
-        width: 100%;
-        padding: 4% 7%; } }
+        width: 50%;
+        padding: 0 7%; } }
     .scent-description .scent-text h2 {
       text-transform: uppercase;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 300;
       margin-bottom: 4%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description .scent-text h2 {
-          font-size: 24px; } }
+          font-size: 30px; } }
     .scent-description .scent-text p {
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 18px;
       margin-bottom: 6%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description .scent-text p {
-          font-size: 12px;
-          line-height: 18px; } }
+          font-size: 15px;
+          line-height: 22px; } }
+      @media screen and (min-width: 1000px) {
+        .scent-description .scent-text p {
+          font-size: 18px;
+          line-height: 27px; } }
     .scent-description .scent-text .scent-price {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description .scent-text .scent-price {
-          font-size: 20px; } }
+          font-size: 24px; } }
     .scent-description .scent-text a {
       color: #000;
       font-size: 18px;
@@ -716,20 +719,21 @@ footer {
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s; }
     .scent-description .scent-text a:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
       border: 1px solid #000;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s; }
-      @media screen and (max-width: 700px) {
+      @media screen and (min-width: 700px) {
         .scent-description .scent-text a:hover {
-          background-color: #fff;
-          color: #000;
+          background-color: #000;
+          color: #fff;
           border: 1px solid #000; } }
 
 .scent-description-right {
   height: 100vh;
   width: 100%;
+  padding: 7% 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,41 +743,44 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 760px) {
+  @media screen and (min-width: 760px) {
     .scent-description-right {
-      width: 100%;
-      padding: 7% 7%; } }
+      padding: 0 0; } }
   .scent-description-right .scent-text {
-    width: 50%;
-    padding: 0 7%;
+    width: 100%;
+    padding: 4% 7%;
     margin-top: 1.5%; }
-    @media screen and (max-width: 760px) {
+    @media screen and (min-width: 760px) {
       .scent-description-right .scent-text {
-        width: 100%;
-        padding: 4% 7%; } }
+        width: 50%;
+        padding: 0 7%; } }
     .scent-description-right .scent-text h2 {
       text-transform: uppercase;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 300;
       margin-bottom: 4%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description-right .scent-text h2 {
-          font-size: 24px; } }
+          font-size: 30px; } }
     .scent-description-right .scent-text p {
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 18px;
       margin-bottom: 6%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description-right .scent-text p {
-          font-size: 12px;
-          line-height: 18px; } }
+          font-size: 15px;
+          line-height: 22px; } }
+      @media screen and (min-width: 1000px) {
+        .scent-description-right .scent-text p {
+          font-size: 18px;
+          line-height: 27px; } }
     .scent-description-right .scent-text .scent-price {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 5%; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description-right .scent-text .scent-price {
-          font-size: 20px; } }
+          font-size: 24px; } }
     .scent-description-right .scent-text a {
       color: #000;
       font-size: 18px;
@@ -783,15 +790,15 @@ footer {
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s; }
     .scent-description-right .scent-text a:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
       border: 1px solid #000;
       -webkit-transition: ease-in-out 0.3s;
       transition: ease-in-out 0.3s; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-description-right .scent-text a:hover {
-          background-color: #fff;
-          color: #000;
+          background-color: #000;
+          color: #fff;
           border: 1px solid #000; } }
 
 form {
@@ -808,30 +815,35 @@ form {
   padding: 1% 1%; }
 
 .products {
-  width: 80%;
+  width: 60%;
   margin: 0 auto; }
-  @media screen and (max-width: 700px) {
+  @media screen and (min-width: 700px) {
     .products {
-      width: 60%; } }
+      width: 80%; } }
   .products h2 {
-    margin-top: 10%;
+    margin-top: 25%;
     margin-bottom: 10%;
-    font-size: 36px;
+    font-size: 23px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
-    @media screen and (max-width: 1100px) {
+    @media screen and (min-width: 700px) {
       .products h2 {
         font-size: 33px;
-        margin-top: 13%; } }
-    @media screen and (max-width: 700px) {
+        margin-top: 13%;
+        margin-bottom: 5%; } }
+    @media screen and (min-width: 1100px) {
       .products h2 {
-        font-size: 23px;
-        margin-top: 25%; } }
+        font-size: 36px;
+        margin-top: 10%; } }
   .products section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -844,28 +856,29 @@ form {
     -ms-flex-align: stretch;
     align-items: stretch;
     margin-top: 7%; }
-    @media screen and (max-width: 700px) {
+    @media screen and (min-width: 700px) {
       .products section {
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
+        -ms-flex-direction: row;
+        flex-direction: row; } }
     .products section h3 {
       width: 100%;
       text-align: center;
+      margin-top: 5%;
       margin-bottom: 7%;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 500; }
-      @media screen and (max-width: 700px) {
+      @media screen and (min-width: 700px) {
         .products section h3 {
-          font-size: 20px;
-          margin-top: 5%; } }
+          margin-top: 0;
+          font-size: 30px; } }
     .products section .picture {
       position: relative;
       background-color: black;
-      width: 22%;
+      width: 100%;
       padding-top: 3%;
-      margin-bottom: 6%;
+      margin-bottom: 15%;
       background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
       background-image: linear-gradient(black, white);
       text-decoration: none;
@@ -924,32 +937,31 @@ form {
         .products section .picture .details span:last-child {
           font-size: 20px;
           text-transform: lowercase; }
-      @media screen and (max-width: 1605px) {
+      @media screen and (min-width: 700px) {
+        .products section .picture {
+          width: 45%;
+          margin-bottom: 6%; } }
+      @media screen and (min-width: 1200px) {
         .products section .picture {
           width: 30%; } }
-      @media screen and (max-width: 1200px) {
+      @media screen and (min-width: 1605px) {
         .products section .picture {
-          width: 45%; } }
-      @media screen and (max-width: 700px) {
-        .products section .picture {
-          width: 100%;
-          margin-bottom: 10%; } }
+          width: 22%; } }
       .products section .picture img {
         width: 70%; }
       .products section .picture h4 {
-        font-size: 26px; }
-        @media screen and (max-width: 760px) {
+        font-size: 18px; }
+        @media screen and (min-width: 760px) {
           .products section .picture h4 {
-            font-size: 18px; } }
+            font-size: 26px; } }
       .products section .picture span {
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Playfair Display", "Times", serif; }
-        @media screen and (max-width: 760px) {
+        @media screen and (min-width: 760px) {
           .products section .picture span {
-            font-size: 14px; } }
+            font-size: 16px; } }
 
 .account {
-  width: 70%;
   margin: 0 auto;
   padding-top: 15vh;
   display: -webkit-box;
@@ -960,17 +972,21 @@ form {
   justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
-  @media only screen and (max-width: 940px) {
+  align-items: flex-start;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media only screen and (min-width: 940px) {
     .account {
-      width: 75%;
-      padding-top: 15vh;
-      -webkit-box-orient: vertical;
+      width: 70%;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
+      -ms-flex-direction: row;
+      flex-direction: row; } }
   .account div {
-    width: 45%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -978,11 +994,11 @@ form {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 10%;
     color: #000; }
-    @media only screen and (max-width: 940px) {
+    @media only screen and (min-width: 940px) {
       .account div {
-        width: 100%;
-        margin-bottom: 10%; } }
+        width: 45%; } }
     .account div h2 {
       text-transform: uppercase;
       margin-bottom: 10%; }
@@ -1063,22 +1079,22 @@ li {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-bottom: 3%; }
-  @media screen and (max-width: 760px) {
+  margin-bottom: 5%; }
+  @media screen and (min-width: 760px) {
     .banner-index {
-      margin-bottom: 5%; } }
+      margin-bottom: 3%; } }
   .banner-index h2 {
-    padding-right: 5%;
-    font-size: 36px;
     font-weight: 500;
-    color: #fff; }
-    @media screen and (max-width: 1100px) {
+    color: #fff;
+    font-size: 18px;
+    padding-left: 35%; }
+    @media screen and (min-width: 760px) {
       .banner-index h2 {
+        padding-right: 5%;
         font-size: 25px; } }
-    @media screen and (max-width: 760px) {
+    @media screen and (min-width: 1100px) {
       .banner-index h2 {
-        font-size: 18px;
-        padding-left: 35%; } }
+        font-size: 36px; } }
   .banner-index div {
     text-align: center;
     position: absolute;
@@ -1112,44 +1128,42 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 5%;
   padding-top: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
-  align-items: stretch; }
-  @media screen and (max-width: 1400px) {
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto; }
+  @media screen and (min-width: 1400px) {
     .scent-list {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
-  @media screen and (max-width: 760px) {
-    .scent-list {
-      margin-bottom: 5%; } }
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
   .scent-list h3 {
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
+    margin-top: 5%;
     font-weight: 500;
-    width: 100%;
-    margin-bottom: 12%; }
-    @media screen and (max-width: 760px) {
+    width: 100%; }
+    @media screen and (min-width: 760px) {
       .scent-list h3 {
-        font-size: 20px;
-        margin-top: 5%; } }
+        margin-bottom: 12%;
+        font-size: 36px; } }
   .scent-list .picture {
     position: relative;
-    width: 27%;
+    width: 100%;
+    margin: 10% 0;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image: linear-gradient(black, white);
-    margin-bottom: 5%;
     padding: 5% 2% 0 2%; }
     .scent-list .picture:hover img {
       -webkit-transition: ease-in-out 0.2s;
@@ -1166,15 +1180,15 @@ li {
       opacity: 1;
       -webkit-transition: ease-in-out 0.2s;
       transition: ease-in-out 0.2s; }
-    @media screen and (max-width: 1400px) {
+    @media screen and (min-width: 760px) {
       .scent-list .picture {
         width: 45%;
         margin: 0 2.5%;
         margin-bottom: 7%; } }
-    @media screen and (max-width: 760px) {
+    @media screen and (min-width: 1400px) {
       .scent-list .picture {
-        width: 100%;
-        margin: 10% 0; } }
+        width: 27%;
+        margin-bottom: 5%; } }
     .scent-list .picture div h4,
     .scent-list .picture div span {
       text-transform: uppercase;
@@ -1183,19 +1197,19 @@ li {
       -webkit-transition: ease-in-out 0.2s;
       transition: ease-in-out 0.2s; }
     .scent-list .picture div h4 {
-      font-size: 26px;
+      font-size: 18px;
       -webkit-transition: ease-in-out 0.7s;
       transition: ease-in-out 0.7s; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-list .picture div h4 {
-          font-size: 18px; } }
+          font-size: 26px; } }
     .scent-list .picture div span {
-      font-size: 16px;
+      font-size: 14px;
       -webkit-transition: ease-in-out 0.7s;
       transition: ease-in-out 0.7s; }
-      @media screen and (max-width: 760px) {
+      @media screen and (min-width: 760px) {
         .scent-list .picture div span {
-          font-size: 14px; } }
+          font-size: 16px; } }
     .scent-list .picture div img {
       width: 90%;
       margin: 0 auto;
@@ -1236,7 +1250,7 @@ li {
         text-transform: inherit; }
 
 .scent-pack {
-  width: 85%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 7%;
   display: -webkit-box;
@@ -1247,24 +1261,25 @@ li {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media screen and (max-width: 950px) {
+  @media screen and (min-width: 950px) {
     .scent-pack {
-      width: 60%; } }
+      width: 85%; } }
   .scent-pack h3 {
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 500;
     width: 100%;
     margin-bottom: 8%; }
-    @media screen and (max-width: 950px) {
+    @media screen and (min-width: 760px) {
       .scent-pack h3 {
         margin-top: 5%;
-        margin-bottom: 12%; } }
-    @media screen and (max-width: 760px) {
+        margin-bottom: 12%;
+        font-size: 26px; } }
+    @media screen and (min-width: 950px) {
       .scent-pack h3 {
-        font-size: 20px; } }
+        font-size: 36px; } }
   .scent-pack .pack {
-    width: 40%;
+    width: 100%;
     margin-bottom: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1278,30 +1293,33 @@ li {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    @media screen and (max-width: 950px) {
+    @media screen and (min-width: 950px) {
       .scent-pack .pack {
-        width: 100%; } }
+        width: 40%; } }
     .scent-pack .pack img {
       width: 100%;
-      margin-bottom: 7%; }
-      @media screen and (max-width: 950px) {
+      margin-bottom: 5%; }
+      @media screen and (min-width: 950px) {
         .scent-pack .pack img {
-          margin-bottom: 5%; } }
+          margin-bottom: 7%; } }
     .scent-pack .pack span {
       color: #000;
       font-family: "Playfair Display", "Times", serif;
-      font-size: 27px;
+      font-size: 15px;
       font-weight: 300; }
-      @media screen and (max-width: 950px) {
+      @media screen and (min-width: 760px) {
         .scent-pack .pack span {
-          margin-bottom: 30%; } }
-      @media screen and (max-width: 760px) {
+          margin-bottom: 30%;
+          font-size: 20px; } }
+      @media screen and (min-width: 950px) {
         .scent-pack .pack span {
-          font-size: 15px; } }
+          font-size: 27px; } }
 
-@media screen and (max-width: 950px) {
-  .pack-two {
-    margin-top: 15%; } }
+.pack-two {
+  margin-top: 15%; }
+  @media screen and (min-width: 950px) {
+    .pack-two {
+      margin-top: 0; } }
 
 .discover {
   text-align: center;

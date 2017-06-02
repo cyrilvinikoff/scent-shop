@@ -8,24 +8,27 @@ footer {
     margin: 0 auto;
     color: $white;
     padding: 9% 0 5% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    @media screen and (max-width: 1250px) {
+    @media screen and (min-width: 1250px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    div {
+      width: 100%;
+      text-align: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-    }
-    div {
-      width: 50%;
-      @media screen and (max-width: 1250px) {
-        width: 100%;
-        text-align: center;
-        -webkit-box-orient: vertical;
+      @media screen and (min-width: 1250px) {
+        width: 50%;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction: row;
+        flex-direction: row;
       }
     }
     .contact {
@@ -36,6 +39,7 @@ footer {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      font-size: 12px;
       span {
         font-family: $ft-title;
         font-size: 15px;
@@ -48,25 +52,23 @@ footer {
           line-height: 22.5px;
           color: $white;
         }
-        @media screen and (max-width: 1250px) {
-          font-size: 12px;
+        @media screen and (min-width: 1250px) {
+          font-size: 15px;
         }
       }
       span:first-child {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 300;
         margin-bottom: 3%;
-        @media screen and (max-width: 1250px) {
-          font-size: 17px;
+        @media screen and (min-width: 1250px) {
+          font-size: 20px;
         }
       }
     }
     .account-container {
       width: 70%;
-      @media screen and (max-width: 1250px) {
-        margin: 0 auto;
-        margin-bottom: 5%;
-      }
+      margin: 0 auto;
+      margin-bottom: 5%;
       .sitemap {
         width: 80%;
         margin: 0 auto;
@@ -81,23 +83,28 @@ footer {
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
           text-align: center;
-          @media screen and (max-width: 1250px) {
-            -webkit-box-orient: vertical;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 7% 0;
+          @media screen and (min-width: 1250px) {
+            margin: 0 0;
+            -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            margin: 7% 0;
+            -ms-flex-direction: row;
+            flex-direction: row;
           }
           li {
-            width: 33.3333333%;
+            width: 100%;
             text-align: center;
             font-family: $ft-title;
-            font-size: 18px;
-            line-height: 27px;
+            font-size: 15px;
             font-weight: 300;
-            @media screen and (max-width: 1250px) {
-              width: 100%;
-              font-size: 15px;
+            line-height: 27px;
+            @media screen and (min-width: 1250px) {
+              width: 33.3333333%;
+              font-size: 18px;
             }
             a {
               color: $white;
@@ -113,27 +120,30 @@ footer {
         border: 1px solid $white;
         width: 50%;
         margin: 0 auto;
-        margin-top: 3.5%;
-        @media screen and (max-width: 1250px) {
-          margin-top: 1%;
+        margin-top: 1%;
+        @media screen and (min-width: 1250px) {
+          margin-top: 3.5%;
         }
       }
     }
     .newsletter {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      @media screen and (max-width: 1250px) {
-        width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      @media screen and (min-width: 1250px) {
+        width: 50%;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+
       }
       div {
-        width: 70%;
+        width: 100%;
+        text-align: center;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -141,30 +151,30 @@ footer {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        @media screen and (max-width: 1250px) {
-          width: 100%;
-          text-align: center;
+        @media screen and (min-width: 1250px) {
+          width: 70%;
+
         }
         span {
           font-family: $ft-title;
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 300;
-          margin-bottom: 8%;
-          @media screen and (max-width: 1250px) {
-            margin-bottom: 4%;
-            font-size: 15px;
+          margin-bottom: 4%;
+          @media screen and (min-width: 1250px) {
+            margin-bottom: 8%;
+            font-size: 20px;
           }
         }
         form {
-          width: 90%;
+          width: 70%;
           background-color: rgba(0, 0, 0, 0);
           border: 1px solid $white;
           color: $white;
-          padding: 3.5% 2%;
-          @media screen and (max-width: 1250px) {
-            padding: 2% 1%;
-            width: 70%;
-            margin: 0 auto;
+          padding: 2% 1%;
+          margin: 0 auto;
+          @media screen and (min-width: 1250px) {
+            width: 90%;
+            padding: 3.5% 2%;
           }
           input:first-child {
             width: 80%;
