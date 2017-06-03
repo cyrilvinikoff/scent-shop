@@ -401,11 +401,11 @@ footer {
         justify-content: space-between; } }
     footer .footer-container div {
       width: 100%;
-      text-align: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      text-align: center; }
       @media screen and (min-width: 1250px) {
         footer .footer-container div {
           width: 50%;
@@ -435,7 +435,8 @@ footer {
           color: #fff; }
         @media screen and (min-width: 1250px) {
           footer .footer-container .contact span {
-            font-size: 15px; } }
+            font-size: 15px;
+            text-align: left; } }
       footer .footer-container .contact span:first-child {
         font-size: 17px;
         font-weight: 300;
@@ -524,7 +525,8 @@ footer {
         flex-direction: column; }
         @media screen and (min-width: 1250px) {
           footer .footer-container .newsletter div {
-            width: 70%; } }
+            width: 70%;
+            text-align: right; } }
         footer .footer-container .newsletter div span {
           font-family: "Playfair Display", "Times", serif;
           font-size: 15px;
@@ -543,8 +545,9 @@ footer {
           margin: 0 auto; }
           @media screen and (min-width: 1250px) {
             footer .footer-container .newsletter div form {
-              width: 90%;
-              padding: 3.5% 2%; } }
+              width: 85%;
+              margin-right: 0;
+              padding: 3.5% 0; } }
           footer .footer-container .newsletter div form input:first-child {
             width: 80%;
             padding: 2% 2%;
