@@ -22,6 +22,7 @@
     -ms-flex-direction: row;
     flex-direction: row;
   }
+
   div {
     width: 100%;
     display: -webkit-box;
@@ -36,10 +37,12 @@
     @media only screen and (min-width: 940px) {
       width: 45%;
     }
+
     h2 {
       text-transform: uppercase;
       margin-bottom: 10%;
     }
+
     form {
       width: 80%;
       display: -webkit-box;
@@ -49,20 +52,25 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+
       label {
         font-family: $ft-content;
         text-transform: uppercase;
         margin-bottom: 5%;
       }
+
       span {
         margin-bottom: 8%;
+
         a {
           color: $black;
         }
       }
+
       .mdp {
         margin-bottom: 2%;
       }
+      
       input {
         padding: 4% 5%;
         border: 1px solid $black;

@@ -3,6 +3,7 @@ footer {
   background-size: cover;
   background-position: center;
   margin-top: 7%;
+
   .footer-container {
     width: 90%;
     margin: 0 auto;
@@ -16,6 +17,7 @@ footer {
       -ms-flex-pack: justify;
       justify-content: space-between;
     }
+
     div {
       width: 100%;
       -webkit-box-orient: vertical;
@@ -31,6 +33,7 @@ footer {
         flex-direction: row;
       }
     }
+
     .contact {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -66,10 +69,12 @@ footer {
         }
       }
     }
+
     .account-container {
       width: 70%;
       margin: 0 auto;
       margin-bottom: 5%;
+
       .sitemap {
         width: 80%;
         margin: 0 auto;
@@ -96,6 +101,7 @@ footer {
             -ms-flex-direction: row;
             flex-direction: row;
           }
+
           li {
             width: 100%;
             text-align: center;
@@ -107,6 +113,7 @@ footer {
               width: 33.3333333%;
               font-size: 18px;
             }
+
             a {
               color: $white;
               font-family: $ft-title;
@@ -117,6 +124,7 @@ footer {
           }
         }
       }
+
       .line {
         border: 1px solid $white;
         width: 50%;
@@ -141,6 +149,7 @@ footer {
         -ms-flex-pack: end;
         justify-content: flex-end;
       }
+
       div {
         width: 100%;
         text-align: center;
@@ -155,6 +164,7 @@ footer {
           width: 70%;
           text-align: right;
         }
+
         span {
           font-family: $ft-title;
           font-size: 15px;
@@ -165,6 +175,7 @@ footer {
             font-size: 20px;
           }
         }
+        
         form {
           width: 70%;
           background-color: rgba(0, 0, 0, 0);
