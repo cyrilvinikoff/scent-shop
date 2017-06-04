@@ -9,19 +9,23 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
+    <!-- NAV -->
     <nav>
       <a href="index.html">
         <h1>logo</h1>
       </a>
       <img class="close" src="img-layout/close.png" alt="fermer le menu">
       <ul>
+        <!-- LISTE ELEMENTS NAV -->
         <li class="search-menu"><a href="#"><img src="img-layout/search.png" alt="rechercher un parfum"></a></li>
         <li><a href="products-list.html">nos parfums</a></li>
         <li><a href="account.html">mon compte</a></li>
         <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
       </ul>
       <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
+      <!-- PANIER AU HOVER -->
       <div class="basket-details">
         <div class="basket-product">
           <figure>
@@ -54,10 +58,11 @@
       </div>
     </nav>
   </header>
+  <!-- FENETRE MODALE RECHERCHE -->
   <div class="search">
     <img src="img-layout/close.png" alt="fermer la fenêtre de recherche" width="30">
     <form class="" action="index.html" method="post">
-      <input type="text" name="" placeholder="Cherchez un parfum">
+      <input type="text" name="sarch" placeholder="Cherchez un parfum">
     </form>
   </div>
   <main class="basket-resume shipping">
@@ -81,12 +86,13 @@
         </div>
       </a>
     </div>
+    <!-- FORMULAIRE ADRESSE DE FACTURATION -->
     <form class="" action="pay.html" method="post">
       <div>
         <h2>Adresse de facturation</h2>
         <label for="name">nom</label>
         <input type="text" name="name" id="name" placeholder="Nom">
-        <label for="firstname">prenom</label>
+        <label for="firstname">prénom</label>
         <input type="text" name="firstname" id="firstname" placeholder="Prénom">
         <label for="adress">adresse</label>
         <input type="text" name="adress" id="adress" placeholder="Adresse">
@@ -96,37 +102,42 @@
         <input type="text" name="city" id="city" placeholder="Ville">
         <label for="country">pays</label>
         <input type="text" name="country" id="country" placeholder="Pays">
+        <!-- CHECK SI ADRESSE EST LA MEME -->
         <div class="sameas">
           <input class="check" type="checkbox" id="ship" name="ship">
           <label for="ship">Même adresse de livraison</label>
         </div>
       </div>
+      <!-- FORMULAIRE ADRESSE DE LIVRAISON SI DIFFERENTE -->
       <div>
         <h2>Adresse de livraison</h2>
-        <label for="name">nom</label>
-        <input type="text" name="name" id="name" placeholder="Nom">
-        <label for="firstname">prenom</label>
-        <input type="text" name="firstname" id="firstname" placeholder="Prénom">
-        <label for="adress">adresse</label>
-        <input type="text" name="adress" id="adress" placeholder="Adresse">
-        <label for="postal">code postal</label>
-        <input type="text" name="postal" id="postal" placeholder="Code Postal">
-        <label for="city">ville</label>
-        <input type="text" name="city" id="city" placeholder="Ville">
-        <label for="country">pays</label>
-        <input type="text" name="country" id="country" placeholder="Pays">
+        <label for="name-liv">nom</label>
+        <input type="text" name="name-liv" id="name-liv" placeholder="Nom">
+        <label for="firstname-liv">prénom</label>
+        <input type="text" name="firstname-liv" id="firstname-liv" placeholder="Prénom">
+        <label for="adress-liv">adresse</label>
+        <input type="text" name="adress-liv" id="adress-liv" placeholder="Adresse">
+        <label for="postal-liv">code postal</label>
+        <input type="text" name="postal-liv" id="postal-liv" placeholder="Code Postal">
+        <label for="city-liv">ville</label>
+        <input type="text" name="city-liv" id="city-liv" placeholder="Ville">
+        <label for="country-liv">pays</label>
+        <input type="text" name="country-liv" id="country-liv" placeholder="Pays">
       </div>
     </form>
     <a class="confirm" href="pay.html">suivant</a>
   </main>
+  <!-- FOOTER -->
   <footer class="clearfix resume">
     <div class="footer-container">
+      <!-- CONTACT -->
       <div class="contact">
         <span>Nous contacter</span>
         <span><a href="mailto:nosparfums@gmail.com">nosparfums@gmail.com</a></span>
         <span><a href="tel:0617389487">06 17 38 94 87</a></span>
       </div>
       <div class="account-container">
+        <!-- PLAN DU SITE -->
         <div class="sitemap">
           <ul>
             <li><a href="products-list.html">Nos parfums</a></li>
@@ -137,6 +148,7 @@
         <div class="line">
         </div>
       </div>
+      <!-- NEWSLETTER -->
       <div class="newsletter">
         <div>
           <span>S'inscrire à notre newsletter</span>
@@ -148,6 +160,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- CHARGEMENT DES SCRIPTS -->
   <script src="script/js/show-search.js" charset="utf-8"></script>
   <script src="script/js/scroll-gestion.js" charset="utf-8"></script>
   <script src="script/js/burger.js" charset="utf-8"></script>

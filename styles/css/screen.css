@@ -843,10 +843,6 @@ form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1183,24 +1179,29 @@ form {
   width: 65%;
   margin: 0 auto; }
   .shipping form {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (min-width: 1150px) {
       .shipping form {
-        width: 100%; } }
-    @media only screen and (max-width: 1150px) {
-      .shipping form {
-        -webkit-box-orient: vertical;
+        width: 100%;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin-top: 12%; } }
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media only screen and (min-width: 1400px) {
+      .shipping form {
+        width: 80%;
+        margin: 0 auto; } }
     .shipping form .sameas {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1212,10 +1213,8 @@ form {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      width: 100%; }
-      @media only screen and (max-width: 1150px) {
-        .shipping form .sameas {
-          text-align: left; } }
+      width: 100%;
+      text-align: left; }
       .shipping form .sameas label {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1225,7 +1224,7 @@ form {
         -ms-flex-align: center;
         align-items: center; }
     .shipping form div {
-      width: 35%;
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1233,26 +1232,32 @@ form {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      font-family: "Lato", "Arial", sans-serif; }
-      @media only screen and (max-width: 1150px) {
+      font-family: "Lato", "Arial", sans-serif;
+      margin-bottom: 10%;
+      text-align: center; }
+      @media only screen and (min-width: 1150px) {
         .shipping form div {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 10%; } }
-      @media only screen and (max-width: 1150px) {
-        .shipping form div:last-child {
-          margin-bottom: 0; } }
+          width: 35%;
+          margin-bottom: 0;
+          text-align: left; } }
+      .shipping form div:last-child {
+        margin-bottom: 0; }
+        @media only screen and (min-width: 1150px) {
+          .shipping form div:last-child {
+            margin-bottom: 5%; } }
       .shipping form div h2 {
-        margin-bottom: 10%; }
-        @media only screen and (max-width: 1150px) {
+        margin-bottom: 10%;
+        font-size: 17px; }
+        @media only screen and (min-width: 1150px) {
           .shipping form div h2 {
-            font-size: 17px; } }
+            font-size: 24px; } }
       .shipping form div label {
         padding: 0 0 0 2%;
-        margin-bottom: 1%; }
-        @media only screen and (max-width: 1150px) {
+        margin-bottom: 1%;
+        font-size: 12px; }
+        @media only screen and (min-width: 1150px) {
           .shipping form div label {
-            font-size: 12px; } }
+            font-size: 15px; } }
         .shipping form div label:last-child {
           padding-left: 0;
           display: inline-block;
@@ -1268,7 +1273,7 @@ form {
   width: 65%;
   margin: 0 auto; }
   .payment .cards {
-    width: 40%;
+    width: 90%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1278,20 +1283,23 @@ form {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
-    @media only screen and (max-width: 1100px) {
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 15%; }
+    @media only screen and (min-width: 800px) {
       .payment .cards {
         width: 60%;
-        margin-top: 15%; } }
-    @media only screen and (max-width: 800px) {
-      .payment .cards {
-        width: 90%; } }
-    @media only screen and (max-width: 700px) {
-      .payment .cards {
-        -webkit-box-orient: vertical;
+        margin-top: 0;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media only screen and (min-width: 1100px) {
+      .payment .cards {
+        width: 40%; } }
     .payment .cards div {
       width: 20%;
       margin-bottom: 5%;
@@ -1426,9 +1434,6 @@ li {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 0 auto; }
   @media screen and (min-width: 1400px) {
     .scent-list {

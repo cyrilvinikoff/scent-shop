@@ -6,22 +6,26 @@
   <link rel="stylesheet" href="styles/css/screen.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <title>Titre du site | ...</title>
+  <title>50 Scents | Nos parfums homme et femme</title>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
+    <!-- NAV -->
     <nav>
       <a href="index.html">
         <h1>logo</h1>
       </a>
       <img class="close" src="img-layout/close.png" alt="fermer le menu">
       <ul>
+        <!-- ELEMENTS NAV -->
         <li class="search-menu"><a href="#"><img src="img-layout/search.png" alt="rechercher un parfum"></a></li>
         <li><a href="products-list.html">nos parfums</a></li>
         <li><a href="account.html">mon compte</a></li>
         <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
       </ul>
       <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
+      <!-- PANIER AU HOVER -->
       <div class="basket-details">
         <div class="basket-product">
           <figure>
@@ -54,24 +58,29 @@
       </div>
     </nav>
   </header>
+  <!-- FENETRE MODALE RECHERCHE -->
   <div class="search">
     <img src="img-layout/close.png" alt="fermer la fenêtre de recherche" width="30">
     <form class="" action="index.html" method="post">
-      <input type="text" name="" placeholder="Cherchez un parfum">
+      <input type="text" name="search" placeholder="Cherchez un parfum">
     </form>
   </div>
   <main class="products">
     <h2>nos parfums</h2>
+    <!-- PARFUMS FEMME -->
     <section id=women>
       <h3>Femme</h3>
       <a class="picture" href="numero5-chanel.html">
+        <!-- DESCRIPTION PARFUM -->
         <div>
           <h4>n°5</h4>
           <span class="brand">chanel</span>
+          <!-- IMAGE DU PARFUM -->
           <figure>
             <img class="chanel-list" src="img-content/chanel1.png" alt="Flacon Bleu - Chanel">
           </figure>
         </div>
+        <!-- HOVER PARFUM -->
         <div class="details">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <span>100&euro;</span>
@@ -221,16 +230,20 @@
         </div>
       </a>
     </section>
+    <!-- PARFUMS HOMME -->
     <section id="men">
       <h3>Homme</h3>
       <a class="picture" href="sauvage-dior.html">
+        <!-- DESCRIPTION DU PARFUM -->
         <div>
           <h4>sauvage</h4>
           <span class="brand">dior</span>
+          <!-- IMAGE DU PARFUM -->
           <figure>
             <img class="sauvage-list" src="img-content/sauvage.png" alt="Flacon Sauvage - Dior">
           </figure>
         </div>
+        <!-- HOVER PARFUM -->
         <div class="details">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <span>100&euro;</span>
@@ -381,14 +394,17 @@
       </a>
     </section>
   </main>
+  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
+      <!-- CONTACT -->
       <div class="contact">
         <span>Nous contacter</span>
         <span><a href="mailto:nosparfums@gmail.com">nosparfums@gmail.com</a></span>
         <span><a href="tel:0617389487">06 17 38 94 87</a></span>
       </div>
       <div class="account-container">
+        <!-- PLAN DU SITE -->
         <div class="sitemap">
           <ul>
             <li><a href="products-list.html">Nos parfums</a></li>
@@ -399,6 +415,7 @@
         <div class="line">
         </div>
       </div>
+      <!-- NEWSLETTER -->
       <div class="newsletter">
         <div>
           <span>S'inscrire à notre newsletter</span>
@@ -411,6 +428,7 @@
     </div>
   </footer>
 
+  <!-- CHARGEMENT DES SCRIPTS -->
   <script src="script/js/show-search.js" charset="utf-8"></script>
   <script src="script/js/scroll-gestion.js" charset="utf-8"></script>
   <script src="script/js/remove-from-basket.js" charset="utf-8"></script>

@@ -1,25 +1,30 @@
 .shipping {
   width: 65%;
   margin: 0 auto;
-  
+
   form {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (min-width: 1150px) {
       width: 100%;
-    }
-    @media only screen and (max-width: 1150px) {
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-top: 12%;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 80%;
+      margin: 0 auto;
     }
 
     .sameas {
@@ -34,9 +39,7 @@
       -ms-flex-align: center;
       align-items: center;
       width: 100%;
-      @media only screen and (max-width: 1150px) {
-        text-align: left;
-      }
+      text-align: left;
       label {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -49,7 +52,7 @@
     }
 
     div {
-      width: 35%;
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -58,29 +61,34 @@
       -ms-flex-direction: column;
       flex-direction: column;
       font-family: $ft-content;
-      @media only screen and (max-width: 1150px) {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10%;
+      margin-bottom: 10%;
+      text-align: center;
+      @media only screen and (min-width: 1150px) {
+        width: 35%;
+        margin-bottom: 0;
+        text-align: left;
       }
       &:last-child {
-        @media only screen and (max-width: 1150px) {
-          margin-bottom: 0;
+        margin-bottom: 0;
+        @media only screen and (min-width: 1150px) {
+          margin-bottom: 5%;
         }
       }
 
       h2 {
         margin-bottom: 10%;
-        @media only screen and (max-width: 1150px) {
-          font-size: 17px;
+        font-size: 17px;
+        @media only screen and (min-width: 1150px) {
+          font-size: 24px;
         }
       }
 
       label {
         padding: 0 0 0 2%;
         margin-bottom: 1%;
-        @media only screen and (max-width: 1150px) {
-          font-size: 12px;
+        font-size: 12px;
+        @media only screen and (min-width: 1150px) {
+          font-size: 15px;
         }
         &:last-child {
           padding-left: 0;

@@ -9,19 +9,23 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
+    <!-- NAV -->
     <nav>
       <a href="index.html">
         <h1>logo</h1>
       </a>
       <img class="close" src="img-layout/close.png" alt="fermer le menu">
       <ul>
+        <!-- ELEMENTS NAV -->
         <li class="search-menu"><a href="#"><img src="img-layout/search.png" alt="rechercher un parfum"></a></li>
         <li><a href="products-list.html">nos parfums</a></li>
         <li><a href="account.html">mon compte</a></li>
         <li class="basket"><a href="basket.html">mon panier <span id="count">0</span></a></li>
       </ul>
       <img class="burger" src="img-layout/menu.png" alt="ouvrir le menu">
+      <!-- PANIER AU HOVER -->
       <div class="basket-details">
         <div class="basket-product">
           <figure>
@@ -54,13 +58,15 @@
       </div>
     </nav>
   </header>
+  <!-- FENETRE MODALE RECHERCHE -->
   <div class="search">
     <img src="img-layout/close.png" alt="fermer la fenêtre de recherche" width="30">
     <form class="" action="index.html" method="post">
-      <input type="text" name="" placeholder="Cherchez un parfum">
+      <input type="text" name="search" placeholder="Cherchez un parfum">
     </form>
   </div>
   <main class="basket-resume payment">
+    <!-- ETAPES COMMANDE -->
     <div class="purchase-steps">
       <a href="basket.html">
         <div>
@@ -81,6 +87,7 @@
         </div>
       </a>
     </div>
+    <!-- CHOIX DE LA CARTE -->
     <div class="cards">
       <div>
         <img src="img-layout/paypal.png" alt="paypal">
@@ -95,26 +102,30 @@
         <input type="checkbox" name="mastercard" value="mastercard">
       </div>
     </div>
+    <!-- FORMULAIRE INFOS CARTE -->
     <form class="" action="index.html" method="post">
       <label for="nom">nom titulaire</label>
-      <input type="text" name="" value="" id="nom" placeholder="Nom titulaire">
+      <input type="text" name="nom" id="nom" placeholder="Nom titulaire">
       <label for="number">numéro carte</label>
-      <input type="text" name="" value="" id="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+      <input type="text" name="number" id="number" placeholder="XXXX-XXXX-XXXX-XXXX">
       <label for="date">date expiration</label>
-      <input type="text" name="" value="" id="date" placeholder="MM/AA">
+      <input type="text" name="date" id="date" placeholder="MM/AA">
       <label for="cvc">code CVC</label>
-      <input type="text" name="" value="" id="cvc" placeholder="XXX">
+      <input type="text" name="cvc" id="cvc" placeholder="XXX">
     </form>
     <a class="confirm" href="index.html">confirmer &amp; payer</a>
   </main>
+  <!-- FOOTER -->
   <footer class="clearfix resume">
     <div class="footer-container">
+      <!-- CONTACT -->
       <div class="contact">
         <span>Nous contacter</span>
         <span><a href="mailto:nosparfums@gmail.com">nosparfums@gmail.com</a></span>
         <span><a href="tel:0617389487">06 17 38 94 87</a></span>
       </div>
       <div class="account-container">
+        <!-- PLAN DU SITE -->
         <div class="sitemap">
           <ul>
             <li><a href="products-list.html">Nos parfums</a></li>
@@ -125,6 +136,7 @@
         <div class="line">
         </div>
       </div>
+      <!-- NEWSLETTER -->
       <div class="newsletter">
         <div>
           <span>S'inscrire à notre newsletter</span>
@@ -136,6 +148,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- CHARGEMENT DES SCRIPTS -->
   <script src="script/js/show-search.js" charset="utf-8"></script>
   <script src="script/js/scroll-gestion.js" charset="utf-8"></script>
   <script src="script/js/burger.js" charset="utf-8"></script>
