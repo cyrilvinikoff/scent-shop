@@ -1,3 +1,4 @@
+/* PAGE NOS PARFUMS*/
 .products {
   width: 60%;
   margin: 0 auto;
@@ -23,6 +24,7 @@
     }
   }
 
+  /* CONTAINER HOMME ET FEMME*/
   section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,6 +61,7 @@
       }
     }
 
+    /* CONTAINER IMAGE + DESC PARFUM*/
     .picture {
       position: relative;
       background-color: black;
@@ -91,6 +94,7 @@
         transition: ease-in-out 0.2s;
       }
 
+      /* DETAILS DU PRODUIT AU HOVER*/
       .details {
         background: rgba(0,0,0,0.41);
         background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.41)), color-stop(0%, rgba(231,56,39,0.41)), color-stop(0%, rgba(0,0,0,0.41)), color-stop(51%, rgba(0,0,0,0.59)), color-stop(100%, rgba(0,0,0,0.76)));

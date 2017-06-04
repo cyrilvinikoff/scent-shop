@@ -1,6 +1,8 @@
+/* RECAPITULATIF PANIER COMMANDE*/
 .basket-resume {
   width: 65%;
   margin: 0 auto;
+  /* ETAPES DE COMMANDE*/
   .purchase-steps {
     width: 100%;
     color: $black;
@@ -51,6 +53,7 @@
       }
     }
   }
+  /* ELEMENTS COMMANDES*/
   .basket-item {
     width: 100%;
     margin-bottom: 5%;
@@ -115,6 +118,7 @@
     -ms-flex-align: end;
     align-items: flex-end;
   }
+  /* CTA DE CONFIRMATION*/
   .confirm {
     float: right;
     background-color: $black;

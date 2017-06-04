@@ -1,3 +1,4 @@
+/* HEADER*/
 header {
   position: fixed;
   width: 100%;
@@ -9,6 +10,7 @@ header {
   font-family: $ft-content;
   font-weight: 300;
 
+  /* BARRE DE NAVIGATION*/
   nav {
     position: relative;
     width: 90%;
@@ -51,6 +53,7 @@ header {
       }
     }
 
+    /* LIENS DE NAVIGATION*/
     li {
       text-transform: uppercase;
       margin-left: 0;
@@ -81,6 +84,7 @@ header {
       font-family: $ft-title;
     }
 
+    /* COMPTEUR DE NOMBRE D'ITEMS DANS LE PANIER*/
     #count {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -102,6 +106,7 @@ header {
       color: $black;
     }
 
+    /* PANIER AU HOVER*/
     .basket-details {
       top: 98%;
       left: 84%;
@@ -242,6 +247,7 @@ header {
   }
 }
 
+/* BURGER MENU*/
 .burger {
   display: block;
   height: 30px;
@@ -252,6 +258,7 @@ header {
   }
 }
 
+/* MENU AU CLIC SUR BURGER*/
 .nav-extend {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,6 +271,7 @@ header {
   padding: 0 5%;
 }
 
+/* RETOUR AU MENU ORIGINEL LORS FERMETURE BURGER*/
 .reset-nav {
   position: relative;
   width: 90%;
@@ -277,6 +285,7 @@ header {
   align-items: center;
 }
 
+/* EFFET APPARITION NAV AU CLIC SUR BURGER*/
 .appear {
   -webkit-animation: appearance ease-in-out 1s;
   animation: appearance ease-in-out 1s;
@@ -299,6 +308,7 @@ header {
   z-index: 1000;
 }
 
+/* WEBKIT APPARITION NAV*/
 @-webkit-keyframes appearance {
   0% {
     opacity: 0;
@@ -327,6 +337,7 @@ header {
   }
 }
 
+/* FORMULAIRE DE RECHERCHE*/
 .search {
   color: $black;
   position: absolute;

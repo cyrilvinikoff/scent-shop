@@ -20,6 +20,7 @@
 .clearfix:after {
   clear: both; }
 
+/* HEADER*/
 header {
   position: fixed;
   width: 100%;
@@ -29,7 +30,8 @@ header {
   background-color: #000;
   color: #fff;
   font-family: "Lato", "Arial", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  /* BARRE DE NAVIGATION*/ }
   header nav {
     position: relative;
     width: 90%;
@@ -40,7 +42,10 @@ header {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    /* LIENS DE NAVIGATION*/
+    /* COMPTEUR DE NOMBRE D'ITEMS DANS LE PANIER*/
+    /* PANIER AU HOVER*/ }
     @media only screen and (max-width: 900px) {
       header nav {
         padding: 0 5%;
@@ -221,6 +226,7 @@ header {
       width: auto;
       cursor: pointer; }
 
+/* BURGER MENU*/
 .burger {
   display: block;
   height: 30px;
@@ -230,6 +236,7 @@ header {
     .burger {
       display: none; } }
 
+/* MENU AU CLIC SUR BURGER*/
 .nav-extend {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +248,7 @@ header {
   height: 100vh;
   padding: 0 5%; }
 
+/* RETOUR AU MENU ORIGINEL LORS FERMETURE BURGER*/
 .reset-nav {
   position: relative;
   width: 90%;
@@ -253,6 +261,7 @@ header {
   -ms-flex-align: center;
   align-items: center; }
 
+/* EFFET APPARITION NAV AU CLIC SUR BURGER*/
 .appear {
   -webkit-animation: appearance ease-in-out 1s;
   animation: appearance ease-in-out 1s;
@@ -274,6 +283,7 @@ header {
   width: 100%;
   z-index: 1000; }
 
+/* WEBKIT APPARITION NAV*/
 @-webkit-keyframes appearance {
   0% {
     opacity: 0;
@@ -292,6 +302,7 @@ header {
   100% {
     opacity: 1;
     margin-bottom: 0; } }
+/* FORMULAIRE DE RECHERCHE*/
 .search {
   color: #000;
   position: absolute;
@@ -381,6 +392,7 @@ header {
 /*     opacity: 1;*/
 /*   }*/
 /* }*/
+/* FOOTER*/
 footer {
   background-image: url("../../img-layout/banniere-footer.png");
   background-size: cover;
@@ -390,7 +402,9 @@ footer {
     width: 90%;
     margin: 0 auto;
     color: #fff;
-    padding: 9% 0 5% 0; }
+    padding: 9% 0 5% 0;
+    /* PARTIE CONTACT*/
+    /* PARTIE NEWSLETTER*/ }
     @media screen and (min-width: 1250px) {
       footer .footer-container {
         display: -webkit-box;
@@ -447,7 +461,8 @@ footer {
     footer .footer-container .account-container {
       width: 70%;
       margin: 0 auto;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      /* PARTIE PLAN DU SITE*/ }
       footer .footer-container .account-container .sitemap {
         width: 80%;
         margin: 0 auto; }
@@ -563,12 +578,17 @@ footer {
             border: none;
             cursor: pointer; }
 
+/* PAGE DE DETAIL DES PARFUMS*/
+/* BANNIERE DES PAGES DETAIL*/
 .banner {
   position: relative;
   background-size: cover;
   background-position: right;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  /* INVITATION AU SCROLL*/
+  /* PHOTO PARFUM*/
+  /* PHOTO PARFUM QUAND ELLE EST A GAUCHE*/ }
   @media screen and (min-width: 760px) {
     .banner {
       background-position: center; } }
@@ -654,6 +674,7 @@ footer {
       .banner img {
         width: 100%; } }
 
+/* DIFFERENTS BACKGROUND PARFUMS*/
 .banner-sauvage {
   background-image: url("../../img-layout/banniere-sauvage-dior.png"); }
 
@@ -666,6 +687,7 @@ footer {
 .banner-numero {
   background-image: url("../../img-layout/banniere-numero5-chanel.png"); }
 
+/* DESCRIPTION PARFUM*/
 .scent-description {
   height: 100vh;
   width: 100%;
@@ -681,7 +703,8 @@ footer {
   .scent-description .scent-text {
     width: 100%;
     padding: 4% 7%;
-    margin-top: 1.5%; }
+    margin-top: 1.5%;
+    /* PRIX*/ }
     @media screen and (min-width: 760px) {
       .scent-description .scent-text {
         width: 50%;
@@ -733,6 +756,7 @@ footer {
           color: #fff;
           border: 1px solid #000; } }
 
+/* DESCRIPTION PARFUM QUAND A DROITE*/
 .scent-description-right {
   height: 100vh;
   width: 100%;
@@ -817,9 +841,11 @@ form {
 .quantity {
   padding: 1% 1%; }
 
+/* PAGE NOS PARFUMS*/
 .products {
   width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* CONTAINER HOMME ET FEMME*/ }
   @media screen and (min-width: 700px) {
     .products {
       width: 80%; } }
@@ -854,7 +880,8 @@ form {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin-top: 7%; }
+    margin-top: 7%;
+    /* CONTAINER IMAGE + DESC PARFUM*/ }
     @media screen and (min-width: 700px) {
       .products section {
         -webkit-box-orient: horizontal;
@@ -883,7 +910,8 @@ form {
       text-decoration: none;
       color: #fff;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      /* DETAILS DU PRODUIT AU HOVER*/ }
       .products section .picture:hover img {
         -webkit-transition: ease-in-out 0.2s;
         transition: ease-in-out 0.2s; }
@@ -960,6 +988,7 @@ form {
           .products section .picture span {
             font-size: 16px; } }
 
+/* PAGE MON COMPTE*/
 .account {
   margin: 0 auto;
   padding-top: 15vh;
@@ -994,7 +1023,8 @@ form {
     justify-content: center;
     text-align: center;
     margin-bottom: 10%;
-    color: #000; }
+    color: #000;
+    /* FORMULAIRES COMPTE*/ }
     @media only screen and (min-width: 940px) {
       .account div {
         width: 45%; } }
@@ -1038,9 +1068,13 @@ form {
               -webkit-transition: ease-in-out 0.5s;
               transition: ease-in-out 0.5s; }
 
+/* RECAPITULATIF PANIER COMMANDE*/
 .basket-resume {
   width: 65%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* ETAPES DE COMMANDE*/
+  /* ELEMENTS COMMANDES*/
+  /* CTA DE CONFIRMATION*/ }
   .basket-resume .purchase-steps {
     width: 100%;
     color: #000;
@@ -1175,9 +1209,11 @@ form {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+/* FORMULAIRE LIVRAISON*/
 .shipping {
   width: 65%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* FORMULAIRE*/ }
   .shipping form {
     width: 100%;
     margin-top: 15%;
@@ -1190,7 +1226,8 @@ form {
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /* CHECK ADRESSE DE LIVRAISON DIFFERENTE*/ }
     @media only screen and (min-width: 1150px) {
       .shipping form {
         width: 100%;
@@ -1269,9 +1306,12 @@ form {
       .shipping form div .check {
         margin-bottom: 0; }
 
+/* PAGE FORMULAIRE CARTE*/
 .payment {
   width: 65%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* CHOIX CARTE*/
+  /* FORMULAIRE INFOS CARTE*/ }
   .payment .cards {
     width: 90%;
     margin: 0 auto;
@@ -1355,10 +1395,13 @@ a {
 li {
   list-style: none; }
 
+/* INDEX*/
+/* MAIN INDEX*/
 .index-container {
   width: 85%;
   margin: 0 auto; }
 
+/* BANNIERE PAGE D'ACCUEIL*/
 .banner-index {
   position: relative;
   background-image: url("../../img-layout/banniere-index.png");
@@ -1419,6 +1462,7 @@ li {
   100% {
     bottom: 8%;
     opacity: 0.5; } }
+/* LISTE DES PARFUMS*/
 .scent-list {
   width: 70%;
   -webkit-box-pack: center;
@@ -1434,12 +1478,29 @@ li {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* CITATION*/
+  /* DIFFERENTS PARFUMS*/ }
   @media screen and (min-width: 1400px) {
     .scent-list {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; } }
+  .scent-list q {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 3%;
+    font-family: "Playfair Display", "Times", serif;
+    margin-bottom: 15%;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic; }
+    @media screen and (min-width: 760px) {
+      .scent-list q {
+        font-size: 20px;
+        margin-bottom: 10%; } }
   .scent-list h3 {
     text-align: center;
     font-size: 20px;
@@ -1457,7 +1518,8 @@ li {
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
     background-image: linear-gradient(black, white);
-    padding: 5% 2% 0 2%; }
+    padding: 5% 2% 0 2%;
+    /* DETAILS AU HOVER SUR LES ARTICLES*/ }
     .scent-list .picture:hover img {
       -webkit-transition: ease-in-out 0.2s;
       transition: ease-in-out 0.2s; }
@@ -1542,6 +1604,7 @@ li {
         font-size: 25px;
         text-transform: inherit; }
 
+/* COFFRETS PARFUMS*/
 .scent-pack {
   width: 60%;
   margin: 0 auto;
@@ -1553,7 +1616,8 @@ li {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  /* ELEMENT COFFRET*/ }
   @media screen and (min-width: 950px) {
     .scent-pack {
       width: 85%; } }
@@ -1614,6 +1678,7 @@ li {
     .pack-two {
       margin-top: 0; } }
 
+/* CTA DECOUVRIR*/
 .discover {
   text-align: center;
   margin: 5% 0; }

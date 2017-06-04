@@ -1,7 +1,9 @@
+/* FORMULAIRE LIVRAISON*/
 .shipping {
   width: 65%;
   margin: 0 auto;
 
+  /* FORMULAIRE*/
   form {
     width: 100%;
     margin-top: 15%;
@@ -27,6 +29,7 @@
       margin: 0 auto;
     }
 
+    /* CHECK ADRESSE DE LIVRAISON DIFFERENTE*/
     .sameas {
       display: -webkit-box;
       display: -ms-flexbox;
