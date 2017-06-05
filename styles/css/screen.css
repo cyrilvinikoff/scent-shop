@@ -55,9 +55,9 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between; } }
-    header nav h1 {
-      font-family: "Lato", "Arial", sans-serif;
-      text-transform: uppercase; }
+    header nav h1 img {
+      height: 80px;
+      width: 80px; }
     header nav ul {
       display: none;
       height: 100%;
